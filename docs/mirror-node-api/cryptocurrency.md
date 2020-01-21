@@ -474,7 +474,7 @@ A single transaction can also be returned by specifying the transaction ID in th
 
 | Parameter | Description |
 | :--- | :--- |
-| {transaction\_ID} | A specific transaction can be returned by specifying a transaction ID |
+| `{transaction_ID}` | A specific transaction can be returned by specifying a transaction ID |
 
 ### Additional Examples
 

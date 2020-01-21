@@ -114,7 +114,4 @@ consensusClient.subscribe(topicId, message -> {
       </td>
     </tr>
   </tbody>
-</table>```java
-
-```
-
+</table>
