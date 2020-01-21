@@ -1,7 +1,7 @@
 # Cryptocurrency Rest API
 
 {% hint style="danger" %}
-Hedera Mirror node rest API is not currently available for public use. &lt;Here are some other alternatives xyz&gt;
+Hedera Mirror node rest API is not currently available for public use. You may check out [DragonGlass](https://app.dragonglass.me/hedera/home) and [Kabuto](https://kabuto.sh) as alternatives. 
 {% endhint %}
 
 ## Accounts
