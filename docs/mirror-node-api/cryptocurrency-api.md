@@ -14,6 +14,70 @@ Example: 0.0.1000‌
 
 Account IDs can also take the account number as an input value. For example, for account ID 0.0.1000, the number 1000 can be specified in the request.
 
+{% api-method method="get" host="https://api.cakes.com" path="/api/v1/accounts" %}
+{% api-method-summary %}
+accounts
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="{account ID}" type="string" %}
+Returns information for a specific account ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="account.id" type="string" required=false %}
+The ID of the account to return account information for
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="account.balance" type="number" %}
+Returns a list of account IDs that have the specified balance
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="account.publickey" type="string" %}
+Returns the account information for the specified public key
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "accounts": [
+        {
+            "balance": {
+                "timestamp": "1568420100.066845000",
+                "balance": 628318531
+            },
+            "account": "0.0.1",
+            "expiry_timestamp": null,
+            "auto_renew_period": null,
+            "key": null,
+            "deleted": null,
+            "entity_type": "account"
+        }
+    ],
+    "links": {
+        "next": "/api/v1/accounts?limit=1&account.id=gt:0.0.1"
+    }
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 ### Response Details <a id="response-details"></a>
 
 | Response Item | Description |
