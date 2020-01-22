@@ -139,7 +139,7 @@ Returns the account information for the specified public key
         </td>
         <td style="text-align:left">
           <p>Returns account information in ascending order</p>
-          <p>Returns account information in descending orde</p>
+          <p>Returns account information in descending order</p>
         </td>
     </tr>
   </tbody>
