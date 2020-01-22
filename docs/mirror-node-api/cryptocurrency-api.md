@@ -423,17 +423,20 @@ If `type=debit` the query returns all transactions that withdrew from an account
   <tbody>
     <tr>
       <td style="text-align:left"><code>lt</code> (less than)</td>
-      <td style="text-align:left">/api/v1/transactions?account.id=lt:0.0.1000</td>
+      <td style="text-align:left"><code>/api/v1/transactions?account.id=lt:0.0.1000</code>
+      </td>
       <td style="text-align:left">Returns account.id transactions less than 1,000</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>lte</code> (less than or equal to)</td>
-      <td style="text-align:left">/api/v1/transactions?account.id=lte:0.0.1000</td>
+      <td style="text-align:left"><code>/api/v1/transactions?account.id=lte:0.0.1000</code>
+      </td>
       <td style="text-align:left">Returns account.id transactions less than or equal to 1,000</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>gt</code> (greater than)</td>
-      <td style="text-align:left">/api/v1/transactions?account.id=gt:0.0.1000</td>
+      <td style="text-align:left"><code>/api/v1/transactions?account.id=gt:0.0.1000</code>
+      </td>
       <td style="text-align:left">Returns account.id transactions greater than 1,000</td>
     </tr>
     <tr>
