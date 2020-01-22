@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Hedera Public Ledger](README.md)
+* [Hedera Hashgraph](README.md)
 * [Mainnet](mainnet/README.md)
   * [Mainnet Access](mainnet/mainnet-access.md)
   * [Nodes](mainnet/address-book.md)
