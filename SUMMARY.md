@@ -19,6 +19,8 @@
 * [SDKs](docs/sdks/README.md)
   * [Java SDK](https://docs.hedera.net/java/)
 * [Hedera API](https://hedera-1.gitbook.io/hedera-api/)
+* [Mirror Node API](docs/mirror-node-api/README.md)
+  * [Cryptocurrency API](docs/mirror-node-api/cryptocurrency-api.md)
 * [GitHub](https://github.com/hashgraph)
 
 ## Core Concepts
