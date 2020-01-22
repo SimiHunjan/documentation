@@ -149,7 +149,7 @@ Returns the account information for the specified public key
 | :--- | :--- |
 | `/api/v1/accounts?account.id=0.0.1001` | Returns the account information of account 1001 |
 | `/api/v1/accounts?account.balance=gt:1000` | Returns all account information that have a balance greater than 1000 tinybars |
-| `/api/v1/accounts?account.publickey=2b60955bcbf0cf5e9ea880b52e5b63f664b08edf6ed 15e301049517438d61864` | Returns all account information for 2b60955bcbf0cf5e9ea880b52e5b63f664b08edf6ed15e301049517438d61864 public key. |
+| `/api/v1/accounts?account.publickey=2b60955bcbf0cf5e9ea880b52e5b63f664b08edf6ed 15e301049517438d61864` | Returns all account information for 2b60955bcbf0cf5e9ea880b52e5b63f664b08edf6ed15e301049517438d61864 public key |
 
 ## Balances <a id="balances"></a>
 
