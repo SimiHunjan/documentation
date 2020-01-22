@@ -8,7 +8,6 @@
 * [Testnet](testnet/README.md)
   * [Testnet Access](testnet/testnet-access.md)
   * [Nodes](testnet/nodes.md)
-* [Status Page](https://status.hedera.com)
 
 ## Getting Started
 
@@ -39,5 +38,6 @@
 * [Developer Chat](https://discordapp.com/invite/FFb9YFX)
 * [Meetups](support-and-community/meetups.md)
 * [Hedera FAQ](https://help.hedera.com/hc/en-us)
+* [Status Page](https://status.hedera.com)
 * [Brand Guidelines](support-and-community/brand-guidelines.md)
 
