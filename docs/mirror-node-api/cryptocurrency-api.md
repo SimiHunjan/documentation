@@ -14,7 +14,7 @@ Example: 0.0.1000‌
 
 Account IDs can also take the account number as an input value. For example, for account ID 0.0.1000, the number 1000 can be specified in the request.
 
-{% api-method method="get" host="https://api.cakes.com" path="/api/v1/accounts" %}
+{% api-method method="get" host="" path=" /api/v1/accounts" %}
 {% api-method-summary %}
 accounts
 {% endapi-method-summary %}
