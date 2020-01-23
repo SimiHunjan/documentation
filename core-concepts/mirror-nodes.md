@@ -15,9 +15,12 @@ Mirror nodes provide a way to store and cost-effectively query historical data f
 A beta version of mirror node code is [available on GitHub](https://github.com/hashgraph/hedera-mirror-node).
 
 {% hint style="info" %}
-Current Status  
+**Current Status**  
   
-The current version is not yet able to connect to a Hedera network, but available as an early preview to better understand and test. A means to connect to a Hedera network \(testnet or mainnet\) will be made publicly available soon.
+The current version is not yet able to connect to a Hedera network, but available as an early preview to better understand and test. A means to connect to a Hedera network \(testnet or mainnet\) will be made publicly available soon.  
+  
+**UPDATE: LIMITED AVAILABILITY**   
+Hedera is offering access to its mirror node through the Hedera Consensus Service \(HCS\) early access program. You must be using Hedera Consensus Service to participate. Register for this program [here](https://learn.hedera.com/l/576593/2020-01-13/7z5jb).
 {% endhint %}
 
 ## Understanding Mirror Nodes
