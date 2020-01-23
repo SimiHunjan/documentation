@@ -21,5 +21,9 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | File Service | Limited |
 | Consensus Service | Coming soon... |
 
+**Check out testnet for limited availability of the consensus service:**
+
+{% page-ref page="../testnet/" %}
+
 
 

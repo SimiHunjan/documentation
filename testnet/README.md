@@ -19,5 +19,10 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | Cryptocurrency | Limited |
 | Smart Contracts | Limited |
 | File Service | Limited |
-| Consensus Service | Coming soon... |
+| Consensus Service | Limited Access 👇  |
+
+{% hint style="danger" %}
+**LIMITED AVAILABILITY**   
+Hedera is offering access to its mirror node through the Hedera Consensus Service \(HCS\) early access program. You must be using Hedera Consensus Service to participate. Register for this program [here](https://learn.hedera.com/HCS-EAP/).
+{% endhint %}
 

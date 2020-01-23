@@ -12,6 +12,7 @@
 ## Getting Started
 
 * [Java SDK Examples](https://docs.hedera.net/javasdk/getting-started)
+* [HCS: Submit your first message!](getting-started/hcs-submit-your-first-message.md)
 
 ## Documentation <a id="docs"></a>
 
@@ -20,6 +21,7 @@
 * [Hedera API](https://hedera-1.gitbook.io/hedera-api/)
 * [Mirror Node API](docs/mirror-node-api/README.md)
   * [Cryptocurrency API](docs/mirror-node-api/cryptocurrency-api.md)
+  * [Hedera Consensus Service API](docs/mirror-node-api/hedera-consensus-service-api-1.md)
 * [GitHub](https://github.com/hashgraph)
 
 ## Core Concepts

@@ -46,7 +46,15 @@ All fees are subject to change.
 | CryptoGetInfo | $0.0001 |
 | CryptoGetStakers | $0.0001 |
 
+### Consensus Service
 
+| Operations | USD \($\) |
+| :--- | :--- |
+| ConsensusCreateTopic | 0.01 |
+| ConsensusUpdateTopic | 0.00022 |
+| ConsensusDeleteTopic | 0.005 |
+| ConsensusSubmitMessage | 0.0001 |
+| ConsensusGetInfo | 0.0001 |
 
 ### File Service
 
