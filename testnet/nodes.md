@@ -6,8 +6,8 @@ Testnet node ID and node addresses.
 | :--- | :--- |
 | 0.0.3 | 0.testnet.hedera.com:50211 |
 | 0.0.4 | 1.testnet.hedera.com:50211 |
-| 0.0.6 | 2.testnet.hedera.com:50211 |
-| 0.0.7 | 3.testnet.hedera.com:50211 |
+| 0.0.5 | 2.testnet.hedera.com:50211 |
+| 0.0.6 | 3.testnet.hedera.com:50211 |
 
 You will need to create complete your Hedera portal profile to recieve a testnet account ID.
 
