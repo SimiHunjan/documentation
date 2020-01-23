@@ -38,8 +38,8 @@ new MirrorConsensusTopicQuery()
         String messageAsString = new String(resp.message, StandardCharsets.UTF_8);
 
         System.out.println(resp.consensusTimestamp + " received topic message: " + messageAsString);
-            },
-                // On gRPC error, print the stack trace
-                Throwable::printStackTrace);
+    },
+        // On gRPC error, print the stack trace
+        Throwable::printStackTrace);
 ```
 
