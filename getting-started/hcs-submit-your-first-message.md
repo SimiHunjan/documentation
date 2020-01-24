@@ -11,9 +11,9 @@ With the Hedera Consensus Service you can develop applications like stock market
 * **Mirror node client** - a mirror node client is used to subscribe to a topic and get messages that are in consensus order from a mirror node. 
 * **Mirror node**: Mirror nodes receive information from Hedera network consensus nodes, but do not participate in consensus themselves. You can get more information about mirror nodes [here](https://docs.hedera.com/guides/core-concepts/mirror-nodes).
 * **Topic** - a topic is the subject of information you would like to send messages to and what clients would subscribe to
-* **Message** - a message is the content published to the hedera network 
+* **Message** - a message is the content published to the Hedera network 
 
-   to a  topic which gets placed in consensus order 
+   to a topic which gets placed in consensus order 
 
 * **Subscriber** - a client that subscribes to a desired topic in order to receive the appropriate messages
 * **Publisher -** publishes messages to a topic 
