@@ -14,16 +14,6 @@
 * [Java SDK Examples](https://docs.hedera.net/javasdk/getting-started)
 * [HCS: Submit your first message!](getting-started/hcs-submit-your-first-message.md)
 
-## Documentation <a id="docs"></a>
-
-* [SDKs](docs/sdks/README.md)
-  * [Java SDK](https://docs.hedera.net/java/)
-* [Hedera API](https://hedera-1.gitbook.io/hedera-api/)
-* [Mirror Node API](docs/mirror-node-api/README.md)
-  * [Cryptocurrency API](docs/mirror-node-api/cryptocurrency-api.md)
-  * [Hedera Consensus Service API](docs/mirror-node-api/hedera-consensus-service-api-1.md)
-* [GitHub](https://github.com/hashgraph)
-
 ## Core Concepts
 
 * [Accounts](core-concepts/accounts.md)
@@ -34,6 +24,16 @@
 * [Transactions and Queries](core-concepts/transactions-and-queries.md)
 * [State and History](core-concepts/state-and-history.md)
 * [Mirror Nodes](core-concepts/mirror-nodes.md)
+
+## Documentation <a id="docs"></a>
+
+* [SDKs](docs/sdks/README.md)
+  * [Java SDK](https://docs.hedera.net/java/)
+* [Hedera API](https://hedera-1.gitbook.io/hedera-api/)
+* [Mirror Node API](docs/mirror-node-api/README.md)
+  * [Cryptocurrency API](docs/mirror-node-api/cryptocurrency-api.md)
+  * [Hedera Consensus Service API](docs/mirror-node-api/hedera-consensus-service-api-1.md)
+* [GitHub](https://github.com/hashgraph)
 
 ## Support & Community
 
