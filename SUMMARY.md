@@ -8,6 +8,7 @@
 * [Testnet](testnet/README.md)
   * [Testnet Access](testnet/testnet-access.md)
   * [Nodes](testnet/nodes.md)
+* [Changelog](changelog.md)
 
 ## Getting Started
 
