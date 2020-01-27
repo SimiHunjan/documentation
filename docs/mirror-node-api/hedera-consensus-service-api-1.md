@@ -4,7 +4,11 @@ Clients can connect to the Hedera Consensus Service mirror node to subscribe to 
 
 {% hint style="danger" %}
 **LIMITED AVAILABILITY**   
-Hedera is offering access to its mirror node through the Hedera Consensus Service \(HCS\) early access program. You must be using Hedera Consensus Service to participate. Register for this program [here](https://learn.hedera.com/HCS-EAP/).
+Hedera is offering access to its mirror node through the Hedera Consensus Service \(HCS\) early access program. You must be using Hedera Consensus Service to participate. Register for this program [here](https://learn.hedera.com/l/576593/2020-01-13/7z5jb).  
+  
+HCS Mirror Node Endpoints:  
+hcs.testnet.mirrornode.hedera.com:5600   
+hcs.mainnet.mirrornode.hedera.com:5600  
 {% endhint %}
 
 ## Build a Mirror Node Client
@@ -38,8 +42,8 @@ new MirrorConsensusTopicQuery()
         String messageAsString = new String(resp.message, StandardCharsets.UTF_8);
 
         System.out.println(resp.consensusTimestamp + " received topic message: " + messageAsString);
-            },
-                // On gRPC error, print the stack trace
-                Throwable::printStackTrace);
+    },
+        // On gRPC error, print the stack trace
+        Throwable::printStackTrace);
 ```
 
