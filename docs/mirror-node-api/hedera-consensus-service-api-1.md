@@ -8,7 +8,7 @@ Hedera is offering access to its mirror node through the Hedera Consensus Servic
   
 HCS Mirror Node Endpoints:  
 hcs.testnet.mirrornode.hedera.com:5600   
-hcs.mainnet.mirrornode.hedera.com:5600  
+hcs.mainnet.mirrornode.hedera.com:5600
 {% endhint %}
 
 ## Build a Mirror Node Client
