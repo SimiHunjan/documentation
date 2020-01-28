@@ -1,6 +1,6 @@
 # Nodes
 
-Testnet node account ID and node addresses. These can also be found your Hedera portal profile. 
+Below you will find the testnet node account ID and corresponding node address information to set-up your testnet envrionment. These can also be found your Hedera portal profile. 
 
 | Node ID | Node Account ID | Node Address |
 | :--- | :--- | :--- |
