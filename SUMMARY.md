@@ -27,6 +27,7 @@
 
 ## Documentation <a id="docs"></a>
 
+* [Release Notes](docs/release-notes.md)
 * [SDKs](docs/sdks/README.md)
   * [Java SDK](https://docs.hedera.net/java/)
 * [Hedera API](https://hedera-1.gitbook.io/hedera-api/)
