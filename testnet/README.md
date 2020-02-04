@@ -11,7 +11,7 @@ Hedera testnets provides developers with access to a free testing environment fo
 {% hint style="warning" %}
 Limited Support 
 
-Transactions are currently throttled for mainnet and testnet. You will receive a "BUSY" response if you if the number of transactions submitted to the network exceeds the threshold value.
+Transactions are currently throttled for mainnet and testnet. You will receive a "BUSY" response if the number of transactions submitted to the network exceeds the threshold value.
 {% endhint %}
 
 | Network Service | Availability  |
