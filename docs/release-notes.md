@@ -38,6 +38,7 @@ The Hedera core engineering team has been heavily focused, since mid-2019, on bu
 
 * Transfer list within transaction records now shows only a single net amount in or out for each account, reflecting both transfers and any fees paid.
 * Fixed bug in fee schedule that had resulted in fees for ContractCallLocal, ContractGetBytecode, and getVersion queries being undercharged by ~33%
+* You may get more information regarding transaction record fees [here](https://docs.hedera.com/guides/mainnet/fees/transaction-records).
 
 #### SDK Extension Components
 
