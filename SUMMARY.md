@@ -33,8 +33,8 @@
   * [Java SDK](https://docs.hedera.net/java/)
 * [Hedera API](https://hedera-1.gitbook.io/hedera-api/)
 * [Mirror Node API](docs/mirror-node-api/README.md)
-  * [Cryptocurrency API](docs/mirror-node-api/cryptocurrency-api.md)
-  * [Hedera Consensus Service API](docs/mirror-node-api/hedera-consensus-service-api-1.md)
+  * [REST API](docs/mirror-node-api/cryptocurrency-api.md)
+  * [Hedera Consensus Service gRPC API](docs/mirror-node-api/hedera-consensus-service-api-1.md)
 * [GitHub](https://github.com/hashgraph)
 
 ## Support & Community

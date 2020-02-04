@@ -1,12 +1,15 @@
-# Hedera Consensus Service API
+---
+description: >-
+  The Hedera Consensus Service (HCS) gRPC API is open to the public and offers
+  the ability to subscribe to HCS topics from a Hedera managed mirror node.
+---
+
+# Hedera Consensus Service gRPC API
 
 Clients can connect to the Hedera Consensus Service mirror node to subscribe to a Hedera topic and receive messages for the topic it is has subscribed to
 
-{% hint style="danger" %}
-**LIMITED AVAILABILITY**   
-Hedera is offering access to its mirror node through the Hedera Consensus Service \(HCS\) early access program. You must be using Hedera Consensus Service to participate. Register for this program [here](https://learn.hedera.com/l/576593/2020-01-13/7z5jb).  
-  
-HCS Mirror Node Endpoints:  
+{% hint style="info" %}
+**HCS Mirror Node Endpoints:**  
 hcs.testnet.mirrornode.hedera.com:5600   
 hcs.mainnet.mirrornode.hedera.com:5600
 {% endhint %}
