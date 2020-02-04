@@ -3,7 +3,7 @@
 ## **0.4.0 Release Notes**
 
 {% hint style="info" %}
-**Note:** Mainnet update is scheduled to occur on February 5, 2020.
+**Note:** Mainnet update is scheduled to occur on February 10, 2020.
 {% endhint %}
 
 The Hedera core engineering team has been heavily focused, since mid-2019, on building and shipping the Hedera Consensus Service \(HCS\). 
