@@ -37,7 +37,7 @@ What you will need to be successful with this tutorial:
 
 ### 2. Get access to a mirror node
 
-* You will need a mirror node's `host:port` information so that you can subscribe to topics and receive the associated messages. If you do not have access to a mirror node, you can use the mirror node endpoints managed by Hedera [here](https://docs.hedera.com/guides/docs/mirror-node-api/hedera-consensus-service-api-1).
+* You will need a mirror node's `host:port` information so that you can subscribe to topics and receive the associated messages. If you do not have access to a mirror node, you can fill out this [form](https://learn.hedera.com/l/576593/2020-01-13/7z5jb) and join our limited Hedera Consensus Service early access program. 
 
 ### 3. Download the hedera-java-sdk and open in your favorite IDE
 
