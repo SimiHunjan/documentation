@@ -1,11 +1,4 @@
----
-description: >-
-  The mirror node REST API offers the ability to query cryptocurrency
-  transactions and account information from a Hedera managed mirror node. This
-  REST API is only available for whitelisted partners
----
-
-# REST API
+# Cryptocurrency API
 
 {% hint style="danger" %}
 For our whitelisted partners, you may use the following root endpoints:  
