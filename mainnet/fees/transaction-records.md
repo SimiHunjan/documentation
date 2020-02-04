@@ -141,11 +141,11 @@ As the remittance value exceeds these thresholds, both sender and receiver will 
 
 **R3**
 
-![](../../.gitbook/assets/screen-shot-2020-02-04-at-11.32.38-am.png)
+![](../../.gitbook/assets/r3.jpg)
 
 **R4**
 
-![](../../.gitbook/assets/screen-shot-2020-02-04-at-11.34.05-am.png)
+![](../../.gitbook/assets/r4.jpg)
 
 In the R4 format, the record transfer list no longer has multiple transfers for the different accounts – each account has only a single transfer with a value that reflects the sum of the various transfers that impacted each account.
 
