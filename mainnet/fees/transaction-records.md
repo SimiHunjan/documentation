@@ -2,7 +2,7 @@
 
 ## Understanding Transaction Records – Remittances & Fees
 
-Once a transaction has been processed by the Hedera network, either successfully into consensus state or not, the network nodes create a "record" for that transaction indicating its status and impact of the transaction. 
+Once a transaction has been processed by the Hedera network, either successfully into consensus state or not, the network nodes create either a "record" or a "receipt" respectively for that transaction indicating its status and impact. 
 
 A key component of the information within a record for a transaction is how the transaction changed the balances of those Hedera accounts that were involved. An account’s balance can change as a result of a transaction either because of a fee \(paid or received\) or some other intentional transfer – which we refer to here as a ‘remittance’.
 
