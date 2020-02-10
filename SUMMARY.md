@@ -4,6 +4,7 @@
 * [Mainnet](mainnet/README.md)
   * [Mainnet Access](mainnet/mainnet-access.md)
   * [Nodes](mainnet/address-book.md)
+  * [Mirror Nodes](mainnet/mirror-nodes.md)
   * [Fees \(Beta\)](mainnet/fees/README.md)
     * [Transaction Records](mainnet/fees/transaction-records.md)
 * [Testnet](testnet/README.md)
