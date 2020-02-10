@@ -11,7 +11,7 @@ The Hedera mainnet, short for main network, is where applications are run in pro
 {% hint style="warning" %}
 Limited Support 
 
-Transactions are currently throttled for mainnet and testnet. You will receive a "BUSY" response if the number of transactions submitted to the network exceeds the threshold value.
+Transactions are currently throttled for mainnet and testnet. You will receive a "BUSY" response if the number of transactions submitted to the network exceeds the threshold value.  
 {% endhint %}
 
 | Network Service | Availability  |
@@ -19,7 +19,7 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | Cryptocurrency | Limited |
 | Smart Contracts | Limited |
 | File Service | Limited |
-| Consensus Service | Coming soon... |
+| Consensus Service | Limited |
 
 **Check out testnet for limited availability of the consensus service:**
 
