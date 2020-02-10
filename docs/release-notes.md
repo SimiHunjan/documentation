@@ -6,13 +6,8 @@
 **Note:** Mainnet update is scheduled to occur on February 10, 2020.
 {% endhint %}
 
-The Hedera core engineering team has been heavily focused, since mid-2019, on building and shipping the Hedera Consensus Service \(HCS\). 
-
 #### Hedera Services Code \(0.4.0\)
 
-* Say hello to the Hedera Consensus Service! This release is the first to include HCS, allowing ordering of application messages. 
-* Network pricing has been updated to include HCS transactions and queries
-* Network throttle for HCS set to 1000 tps for submitting messages, and 100 tps for each of the other HCS operations.
 *  Improved end to end testing.
 * General code clean up and refactoring.
 * ContractCall - TransactionReceipt response to ContractCall no longer includes the contractID called
@@ -21,7 +16,6 @@ The Hedera core engineering team has been heavily focused, since mid-2019, on bu
 
 #### Mirror Node \(0.5.3\) 
 
-* Now supports all HCS functionality including a streaming gRPC API for message topic subscription.
 * Changed how the mirror node verifies mainnet consensus. Mirror node now waits for at least third of node signatures rather than greater than two thirds to verify consensus.
 *  Added new mainnet nodes to the mirror node address book.
 * Access still restricted to a white listed set of IP addresses. Request access [here](https://learn.hedera.com/l/576593/2020-01-13/7z5jb).
