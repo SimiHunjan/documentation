@@ -19,7 +19,7 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | Cryptocurrency | Limited |
 | Smart Contracts | Limited |
 | File Service | Limited |
-| Consensus Service | Limited |
+| Consensus Service | Coming Soon... |
 
 **Check out testnet for limited availability of the consensus service:**
 
