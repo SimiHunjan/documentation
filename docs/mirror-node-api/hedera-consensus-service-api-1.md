@@ -19,9 +19,19 @@ hcs.mainnet.mirrornode.hedera.com:5600
 | :--- | :--- |
 | `MirrorClient(<endpoint>)` | Initializes the MirrorClient object |
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 final MirrorClient mirrorClient = new MirrorClient(MIRROR_NODE_ADDRESS);
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const mirrorClient = new MirrorClient(mirrorNodeAddress);
+```
+{% endtab %}
+{% endtabs %}
 
 ### Subscribe to a topic
 
