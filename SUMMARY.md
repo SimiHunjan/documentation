@@ -14,7 +14,6 @@
 
 ## Getting Started
 
-* [Java SDK Examples](https://docs.hedera.net/javasdk/getting-started)
 * [HCS: Submit your first message!](getting-started/hcs-submit-your-first-message.md)
 
 ## Core Concepts
