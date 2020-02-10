@@ -44,7 +44,6 @@ System.out.println(topicInfo.sequenceNumber);
 
 {% tab title="JavaScript" %}
 ```javascript
-
 const topicInfo = await new ConsensusTopicInfoQuery()
      .setTopicId(topicId)
      .execute(client);
