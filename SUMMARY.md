@@ -10,6 +10,7 @@
 * [Testnet](testnet/README.md)
   * [Testnet Access](testnet/testnet-access.md)
   * [Nodes](testnet/nodes.md)
+  * [Mirror Nodes](testnet/mirror-nodes.md)
 
 ## Getting Started
 
