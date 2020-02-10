@@ -37,6 +37,8 @@ final MirrorClient mirrorClient = new MirrorClient(MIRROR_NODE_ADDRESS);
 | `setEndTime(<endTime>)` | Instant | The time to stop receiving messages from the topic |
 | `setLimit(<limit>)` | long | The limit to the number of messages to receive for that topic |
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 new MirrorConsensusTopicQuery()
     .setTopicId(topicId)
@@ -48,4 +50,18 @@ new MirrorConsensusTopicQuery()
         // On gRPC error, print the stack trace
         Throwable::printStackTrace);
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+new MirrorConsensusTopicQuery()
+    .setTopicId(topicId)
+    .subscribe(
+        consensusClient,
+        (message) => console.log(message.toString()),
+        (error) => console.log(`Error: ${error}`)
+    );
+```
+{% endtab %}
+{% endtabs %}
 
