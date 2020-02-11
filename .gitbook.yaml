@@ -1,2 +1,2 @@
 redirects:  
-    ./docs/hashgraph-overview: ./core-concepts/hashgraph-consensus-algorithms/README.md
+    docs/hashgraph-overview: core-concepts/hashgraph-consensus-algorithms/README.md
