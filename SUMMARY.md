@@ -5,16 +5,17 @@
   * [Mainnet Access](mainnet/mainnet-access.md)
   * [Nodes](mainnet/address-book.md)
   * [Mirror Nodes](mainnet/mirror-nodes.md)
-  * [Fees \(Beta\)](mainnet/fees.md)
+  * [Fees \(Beta\)](mainnet/fees/README.md)
     * [Transaction Records](mainnet/fees/transaction-records.md)
 * [Testnet](testnet/README.md)
   * [Testnet Access](testnet/testnet-access.md)
   * [Nodes](testnet/nodes.md)
   * [Mirror Nodes](testnet/mirror-nodes.md)
 
-## Getting Started
+## Tutorials
 
-* [HCS: Submit your first message!](getting-started/hcs-submit-your-first-message.md)
+* [HCS: Submit your first message!](tutorials/hcs-submit-your-first-message.md)
+* [Getting Started: JavaScript](tutorials/getting-started-javascript.md)
 
 ## Core Concepts
 
