@@ -1,1 +1,2 @@
-
+redirects:  
+    guides/docs/hashgraph-overview: guides/core-concepts/hashgraph-consensus-algorithms.md
