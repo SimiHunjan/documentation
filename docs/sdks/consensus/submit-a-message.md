@@ -15,7 +15,7 @@ new ConsensusMessageSubmitTransaction()
 | Methods | Type | Description |
 | :--- | :--- | :--- |
 | `setTopicID(<topic>` | TopicID | The ID of the topic to submit a message to |
-| `setMessage(<message>)` | byte\[ \] | The message to submit in byte format. Max size of the transaction \(including signatures\) is 6kB. |
+| `setMessage(<message>)` | byte\[ \] | The message to submit in byte format. Max size of the transaction \(including signatures\) is 6144 bytes. |
 | `setMessage(<message>)` | String | The message to submit in string format |
 
 ### Example
