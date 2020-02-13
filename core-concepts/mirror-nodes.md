@@ -52,7 +52,17 @@ Hedera consensus nodes push new record files and signature files to the cloud st
 
 ## Using Mirror Nodes
 
-There are currently two options to use mirror nodes: query a REST API provided as a service, or run your own node.
+### Hedera Consensus Service gRPC API
+
+**Testnet**:
+
+{% page-ref page="../testnet/mirror-nodes.md" %}
+
+#### Mainnet:
+
+{% page-ref page="../mainnet/mirror-nodes.md" %}
+
+
 
 ### REST API from Hedera \(coming soon\)
 
