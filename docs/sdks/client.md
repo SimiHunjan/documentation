@@ -96,6 +96,6 @@ client.setOperator(operatorAccount, operatorPrivateKey);
 | `getMaxTransactionFee()` | long | Returns the set maximum fee |
 
 {% hint style="warning" %}
-The **max transaction fee** and **max query payment** are both set to 1\_000\_000 tinybar \(1 hbar\).  This amount can be modified by using `setMaxTransactionFee()`and `setMaxQueryPayment().`
+The **max transaction fee** and **max query payment** are both set to 100\_000\_000 tinybar \(1 hbar\).  This amount can be modified by using `setMaxTransactionFee()`and `setMaxQueryPayment().`
 {% endhint %}
 
