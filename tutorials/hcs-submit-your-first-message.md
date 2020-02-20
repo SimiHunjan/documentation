@@ -103,7 +103,7 @@ MIRROR_NODE_ADDRESS=
 
 ### 6. Connect to the Hedera testnet
 
-* Here we are going to connect to the Hedera testnet and and set the operator information with your testnet account ID and private key. The operator is responsible to pay transaction fees and sign for all transactions that will be generated in this tutorial. Luckily, this is testnet so you will have unlimited hbars to use in this development environment!
+* Here we are going to connect to the Hedera testnet and and set the operator information with your testnet account ID and private key. The operator is responsible to pay transaction fees and sign all transactions that will be generated in this tutorial. Luckily, this is testnet so you will have unlimited hbars to use in this development environment!
 
 ```java
 // Grab the OPERATOR_ID and OPERATOR_KEY from the .env file
