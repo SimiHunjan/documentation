@@ -85,6 +85,7 @@ Install it with your favorite package manager.
 
 ```text
 // install Hedera's JS SDK with NPM
+// This example uses Hedera Java SDK v1.1.8
 npm install --save @hashgraph/sdk
 
 // Install with Yarn
@@ -114,35 +115,34 @@ Update your **index.js** with the following examples.
 Note: there are inline comments to help you understand what’s going on!
 
 ```javascript
-// Allow access to our .env
-require("dotenv").config();
-
 // Import the Hedera Hashgraph JS SDK
 const { Client } = require("@hashgraph/sdk");
+// Allow access to our .env file variables
+require("dotenv").config();
 
-// Grab our private key from our .env
-const privateKey = process.env.PRIVATE_KEY;
+// Grab your account ID and private key from the .env file
+const operatorAccountId = process.env.OPERATOR_ID;
+const operatorPrivateKey = process.env.OPERATOR_KEY;
+
 
 // If we weren't able to grab it, we should throw a new error
-if (!privateKey) {
-  throw new Error("missing env var OPERATOR_KEY");
+if (operatorPrivateKey == null ||
+    operatorAccountId == null ) {
+    throw new Error("environment variables OPERATOR_KEY and OPERATOR_ID must be present");
 }
 
 // Create our connection to the Hedera network
 // The Hedera JS SDK makes this reallyyy easy!
-const client = new Client({
-  operator: {
-    // Note: here we pass in our account ID from our .env
-    account: { shard: 0, realm: 0, account: process.env.ACCOUNT_ID },
-    privateKey
-  }
-});
+const client = Client.forTestnet();
+
+// Set your client account ID and private key used to pay for transaction fees and sign transactions
+client.setOperator(operatorAccountId, operatorPrivateKey);
 
 // Hedera is an asynchronous environment :)
 (async function() {
 
   // Attempt to get and display the balance of our account
-  var currentBalance = (await client.getAccountBalance()).toString();
+  var currentBalance = (await client.getAccountBalance(operatorAccountId)).toString();
   console.log("account balance:", currentBalance);
 })();
 ```
