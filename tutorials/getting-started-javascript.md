@@ -142,7 +142,7 @@ const client = new Client({
 (async function() {
 
   // Attempt to get and display the balance of our account
-  var currentBalance = (await client.getAccountBalance(process.env.OPERATOR_ID)).toString();
+  var currentBalance = (await client.getAccountBalance(process.env.ACCOUNT_ID)).toString();
   console.log("account balance:", currentBalance);
 })();
 ```
