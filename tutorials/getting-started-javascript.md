@@ -53,8 +53,8 @@ I personally really like VS Code if you haven’t checked it out recently!
 Now you can add the following information, provided from your [Hedera Portal](https://portal.hedera.com/) Account.
 
 ```text
-ACCOUNT_ID=YOUR-TESTNET-ACCOUNT-ID
-PRIVATE_KEY=YOUR-TESTNET-PRIVATE-KEY
+OPERATOR_ID=YOUR-TESTNET-ACCOUNT-ID
+OPERATOR_KEY=YOUR-TESTNET-PRIVATE-KEY
 ```
 
 > Don’t have an account yet? [Sign up here](https://portal.hedera.com/).
