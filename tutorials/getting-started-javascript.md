@@ -160,6 +160,7 @@ If successful, within a few seconds we should see something like `account balanc
 
 ```javascript
 // Import the Hedera Hashgraph JS SDK
+// Example uses Hedera JavaScript SDK v1.1.8
 const { Client, CryptoTransferTransaction, AccountId } = require("@hashgraph/sdk");
 // Allow access to our .env file variables
 require("dotenv").config();
