@@ -158,34 +158,43 @@ If successful, within a few seconds we should see something like `account balanc
 3.2. Example 2: Transferring hbar
 
 ```javascript
-// Allow access to our .env
+// Import the Hedera Hashgraph JS SDK
+const { Client, CryptoTransferTransaction, AccountId } = require("@hashgraph/sdk");
+// Allow access to our .env file variables
 require("dotenv").config();
 
-// Import the Hedera Hashgraph JS SDK
-const { Client } = require("@hashgraph/sdk");
+// Grab your account ID and private key from the .env file
+const operatorAccountId = process.env.OPERATOR_ID;
+const operatorPrivateKey = process.env.OPERATOR_KEY;
 
-// Grab our private key from our .env
-const privateKey = process.env.PRIVATE_KEY;
 
-// If we weren't able to grab it, we should throw a new error 
-if (!privateKey) {
-  throw new Error("missing env var OPERATOR_KEY");
+// If we weren't able to grab it, we should throw a new error
+if (operatorPrivateKey == null ||
+    operatorAccountId == null ) {
+    throw new Error("environment variables OPERATOR_KEY and OPERATOR_ID must be present");
 }
 
 // Create our connection to the Hedera network
 // The Hedera JS SDK makes this reallyyy easy!
-const client = new Client({
-  operator: {
-    // Note: here we pass in our account ID from our .env
-    account: { shard: 0, realm: 0, account: process.env.ACCOUNT_ID },
-    privateKey
-  }
-});
+const client = Client.forTestnet();
 
+// Set your client default account ID and private key used to pay for transaction fees and sign transactions
+client.setOperator(operatorAccountId, operatorPrivateKey);
+
+// Hedera is an asynchronous environment :)
 (async function() {
-    console.log("balance before transfer:", (await client.getAccountBalance()).toString());
-    await client.transferCryptoTo({ shard: 0, realm: 0, account: 3 }, 10000);
-    console.log("balance after transfer:", (await client.getAccountBalance()).toString());
+    console.log("balance before transfer:", (await client.getAccountBalance(operatorAccountId)));
+
+    const receipt = await (await new CryptoTransferTransaction()
+        .addSender(operatorAccountId, 1)
+        .addRecipient("0.0.3", 1)
+        .setTransactionMemo("sdk example")
+        .execute(client))
+        .getReceipt(client);
+
+    console.log(receipt);
+    console.log("balance after transfer:", (await client.getAccountBalance(operatorAccountId)));
+
 }());
 ```
 
