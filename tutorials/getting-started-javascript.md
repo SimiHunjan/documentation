@@ -214,5 +214,5 @@ Want to keep learning about Hedera development? Here’s some resources.
 * [JS SDK examples](https://github.com/hashgraph/hedera-sdk-js/tree/master/examples)
 * [Express.js example project](https://github.com/Cooper-Kunz/hedera-express-js-example)
 
-Is there anything else you’d like a tutorial about? Let me know on [twitter]().
+Is there anything else you’d like a tutorial about? Let me know on [twitter](https://twitter.com/cooper_kunz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).
 
