@@ -8,10 +8,17 @@ description: >-
 # Hedera Consensus Service gRPC API
 
 {% hint style="info" %}
+**Hedera Consensus Service Mainnet Mirror Node Access**  
+To gain access to the Hedera managed mirror node for mainnet, please complete this [form](https://learn.hedera.com/hcs-mirror-api-mainnet).  
+  
 **HCS Mirror Node Endpoints:**  
 hcs.testnet.mirrornode.hedera.com:5600   
 hcs.mainnet.mirrornode.hedera.com:5600
 {% endhint %}
+
+Community supported mirror node information can be found here:
+
+{% page-ref page="../../mainnet/mirror-nodes.md" %}
 
 ## Build a Mirror Node Client
 
@@ -32,6 +39,11 @@ const mirrorClient = new MirrorClient(mirrorNodeAddress);
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="warning" %}
+**Concurrent Subscription Limit**  
+A single client can make a maximum of **5** concurrent subscription calls per connection. 
+{% endhint %}
 
 ### Subscribe to a topic
 

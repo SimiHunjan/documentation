@@ -39,30 +39,71 @@ What you will need to be successful with this tutorial:
 
 * You will need a mirror node's `host:port` information so that you can subscribe to topics and receive the associated messages. If you do not have access to a mirror node, you can use the mirror node endpoints managed by Hedera [here](https://docs.hedera.com/guides/docs/mirror-node-api/hedera-consensus-service-api-1).
 
-### 3. Download the hedera-java-sdk and open in your favorite IDE
+### 3. Create a new maven project in your favorite IDE
 
-* Download the hedera-java-sdk [here](https://github.com/hashgraph/hedera-sdk-java)
-* Open the hedera-java-sdk in the IDE of your choice
+* Add the following dependencies to your pom.xml file
+
+```java
+<dependency>
+  <groupId>com.hedera.hashgraph</groupId>
+  <artifactId>sdk</artifactId>
+  <version>1.1.3</version>
+</dependency>
+
+<!-- SELECT ONE: -->
+<!-- netty transport (for server or desktop applications) -->
+<dependency>
+  <groupId>io.grpc</groupId>
+  <artifactId>grpc-netty-shaded</artifactId>
+  <version>1.24.0</version>
+</dependency>
+<!-- netty transport, unshaded (if you have a matching Netty dependency already) -->
+<dependency>
+  <groupId>io.grpc</groupId>
+  <artifactId>grpc-netty</artifactId>
+  <version>1.24.0</version>
+</dependency>
+<!-- okhttp transport (for lighter-weight applications or Android) -->
+<dependency>
+  <groupId>io.grpc</groupId>
+  <artifactId>grpc-okhttp</artifactId>
+  <version>1.24.0</version>
+</dependency>
+<dependency>
+  <groupId>io.github.cdimascio</groupId>
+  <artifactId>java-dotenv</artifactId>
+  <version>5.1.3</version>
+</dependency>
+
+```
 
 ### 4. Set-up your enviornment variables 
 
-* Look in the root folder of the hedera-java-sdk and open the sample.env file
-* Update the following:
+* Create a .env file in the projects root directory 
+* Add the following:
   * `OPERATOR_ID`: Your testnet account ID goes here 
   * `OPERATOR_KEY`: Your testnet account ID private key goes here
 * Add the following:
   * `MIRROR_NODE_ADDRESS:` Insert the mirror node `host:port` information here
-* Rename the file from sample.env to .env
 * Your environment set-up is now complete 
+
+Sample .env file:
+
+```text
+# Operator ID and Key
+OPERATOR_ID=
+OPERATOR_KEY=
+# Mirror Node Address
+MIRROR_NODE_ADDRESS=
+```
 
 ### 5. Create a new HCS class
 
-* Naviagte to hedera-sdk-java/examples/src/main/java/com/hedera/hashgraph/sdk/ **examples**/
-* Create a new class and title it something like HederaConsensusService
+* Create a new class and title it something like HederaConsensusService.java
 
 ### 6. Connect to the Hedera testnet
 
-* Here we are going to connect to the Hedera testnet and and set the operator information with your testnet account ID and private key. The operator is responsible to pay and sign for all transactions that will be generated in this tutorial. Lucikly, this is testnet and you have unlimited hbars to use in this development environment!
+* Here we are going to connect to the Hedera testnet and and set the operator information with your testnet account ID and private key. The operator is responsible to pay transaction fees and sign all transactions that will be generated in this tutorial. Luckily, this is testnet so you will have unlimited hbars to use in this development environment!
 
 ```java
 // Grab the OPERATOR_ID and OPERATOR_KEY from the .env file
@@ -105,8 +146,8 @@ System.out.println("Your topic ID is: " +topicId);
 
 ### 9. Subscribe to a topic
 
-* Now we will shift our attention the mirror node client and subscribe to the topic created.
-* We will acheive this by referencing the topics topic ID 
+* Now we will shift our attention the mirror node client and subscribe to the topic created
+* We will acheive this by referencing the topics `topicId`
 * We will also print the consensus timestamp and message to the console
 
 ```java
@@ -124,7 +165,7 @@ new MirrorConsensusTopicQuery()
 ### 10. Submit a message to a topic
 
 * Now that we have created a topic and subscribed to that topic, we are ready to submit a message using the ConsensusSubmitTransaction constructor and submit to the Hedera network
-* The below example will submit message with the message as "hello, HCS!"
+* The below example will submit a message with the message as "hello, HCS!"
 
 ```java
 //Submit a message to a topic

@@ -19,7 +19,7 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | Cryptocurrency | Limited |
 | Smart Contracts | Limited |
 | File Service | Limited |
-| Consensus Service | Limited. |
+| Consensus Service | Limited |
 
 {% hint style="info" %}
 **Hedera Consensus Service Mainnet Mirror Node Access**  
