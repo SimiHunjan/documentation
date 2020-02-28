@@ -1,6 +1,14 @@
 # Release Notes
 
-## **0.4.0 Release Notes**
+## 0.6.0 Mirror Node Updates
+
+This release was mainly focused on enhancing the stability and performance of the mirror node. We improved the transaction ingestion speed from 600 to about 4000 transactions per second. At the same time, we greatly improved the resiliency and performance of the GRPC module. We also added acceptance tests to test out HCS end to end.
+
+**Breaking Change**
+
+Please note that one potentially breaking change in this release is to reject subscriptions to topics that don't exist. This avoids the server having to poll repeatedly until it is created and taking up resources for a topic that may never exist. It is expected that clients or the [SDK](https://github.com/hashgraph/hedera-sdk-java/issues/367) will poll periodically after creating a topic until that topic makes its way to the mirror node. This functionality is hidden behind a feature flag but will slowly be rolled out over the next month.
+
+## **0.4.0 Updates**
 
 {% hint style="info" %}
 **Note:** Mainnet update is scheduled to occur on February 10, 2020.
