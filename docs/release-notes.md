@@ -1,6 +1,6 @@
 # Release Notes
 
-## 0.6.0 Mirror Node Updates
+## [0.6.0 Mirror Node Updates](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.6.0)
 
 This release was mainly focused on enhancing the stability and performance of the mirror node. We improved the transaction ingestion speed from 600 to about 4000 transactions per second. At the same time, we greatly improved the resiliency and performance of the GRPC module. We also added acceptance tests to test out HCS end to end.
 
