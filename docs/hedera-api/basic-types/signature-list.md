@@ -1,4 +1,4 @@
-# Signature List
+# SignatureList
 
 The signatures corresponding to a KeyList of the same length.
 

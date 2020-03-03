@@ -1,4 +1,4 @@
-# Signature Pair
+# SignaturePair
 
 The client may use any number of bytes from 0 to the whole length of the public key for pubKeyPrefix.
 
