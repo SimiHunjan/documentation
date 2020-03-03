@@ -4,6 +4,6 @@ The ID for a transaction. This is used for retrieving receipts and records for a
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| `transactionValidStart` | ​[Timestamp](https://docs.hedera.com/hedera-api/miscellaneous/timestamp.proto)​ | The transaction is invalid if consensusTimestamp &lt; transactionID.transactionStartValid |
-| `accountID` | ​[AccountID](https://docs.hedera.com/hedera-api/basic-types-1/accountid)​ | The Account ID that paid for this transaction |
+| `transactionValidStart` | ​[Timestamp](../miscellaneous/timestamp.md#timestamp)​ | The transaction is invalid if consensusTimestamp &lt; transactionID.transactionStartValid |
+| `accountID` | ​[AccountID](accountid.md)​ | The Account ID that paid for this transaction |
 
