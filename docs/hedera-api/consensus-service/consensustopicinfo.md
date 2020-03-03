@@ -1,6 +1,6 @@
 # ConsensusTopicInfo
 
-|  Field | Type | Description |
+| Field | Type | Description |
 | :--- | :--- | :--- |
 | `memo` | ​Content | Short publicly visible memo about the topic. No guarantee of uniqueness. |
 | `runningHash` | ​Content | SHA-384 running hash &lt;previousRunningHash, topicId, consensusTimestamp, sequenceNumber, message&gt; |
