@@ -5,7 +5,7 @@ A set of public keys that are used together to form a threshold signature. If th
 | Field | Type | Description |
 | :--- | :--- | :--- |
 | `threshold` | ​ | A valid signature set must have at least this many signatures |
-| `keys` | ​[KeyList](https://docs.hedera.com/hedera-api/basic-types-1/untitled-5)​ | List of all the keys that can sign |
+| `keys` | ​[KeyList](keylist.md)​ | List of all the keys that can sign |
 
 ####   <a id="undefined"></a>
 
