@@ -137,5 +137,11 @@ main();
       <td style="text-align:left">Creates a record for any transaction that withdraws more than x value
         of tinybars.</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>setProxyAccount(&lt;accountId&gt;)</code>
+      </td>
+      <td style="text-align:center">AccountID</td>
+      <td style="text-align:left">ID of the account to which this account is proxy staked</td>
+    </tr>
   </tbody>
 </table>
