@@ -113,4 +113,12 @@
 | MAX\_CONTRACT\_STORAGE\_EXCEEDED | Contract permanent storage exceeded the currently allowable limit |
 | MAX\_GAS\_LIMIT\_EXCEEDED | Gas exceeded currently allowable gas limit per transaction |
 | MAX\_FILE\_SIZE\_EXCEEDED | File size exceeded the currently allowable limit |
+| INVALID\_TOPIC\_ID | The Topic ID specified is not in the system. |
+| INVALID\_ADMIN\_KEY |  |
+| INVALID\_SUBMIT\_KEY |  |
+| UNAUTHORIZED | An attempted operation was not authorized \(ie - a deleteTopic for a topic with no adminKey\). |
+| INVALID\_TOPIC\_MESSAGE | A ConsensusService message is empty. |
+| INVALID\_AUTORENEW\_ACCOUNT | The autoRenewAccount specified is not a valid, active account. |
+| AUTORENEW\_ACCOUNT\_NOT\_ALLOWED | An adminKey was not specified on the topic, so there must not be an autoRenewAccount. |
+| TOPIC\_EXPIRED | The topic has expired, was not automatically renewed, and is in a 7 day grace period before the topic will be deleted unrecoverably. This error response code will not be returned until autoRenew functionality is supported by HAPI. |
 
