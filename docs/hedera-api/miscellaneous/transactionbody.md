@@ -30,4 +30,8 @@ A single transaction. All transaction types are possible here.
 |  | systemDelete | [SystemDeleteTransactionBody](systemdelete.md#systemdeletetransactionbody) | Hedera multisig system deletes a file or smart contract |
 |  | systemUndelete | [SystemUndeleteTransactionBody](systemundelete.md#systemundeletetransactionbody) | To undelete an entity deleted by SystemDelete |
 |  | freeze | [FreezeTransactionBody](freeze.md#freezetransactionbody) | Freeze the nodes |
+|  | consensusCreateTopic | [ConsensusCreateTopicTransactionBody](../consensus-service/consensuscreatetopic.md#consensuscreatetopictransactionbody) |  |
+|  | consensusUpdateTopic | [ConsensusUpdateTopicTransactionBody](../consensus-service/consensusupdatetopic.md#consensusupdatetopictransactionbody) |  |
+|  | consensusDeleteTopic | [ConsensusDeleteTopicTransactionBody](../consensus-service/consensusdeletetopic.md#consensusdeletetopictransactionbody) |  |
+|  | consensusSubmitMessage | [ConsensusSubmitMessageTransactionBody](../consensus-service/consensussubmitmessage.md#consensussubmitmessagetransactionbody) |  |
 
