@@ -44,16 +44,6 @@ new AccountUpdateTransaction()
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>setKey(&lt;key&gt;)</code>
-      </td>
-      <td style="text-align:left">Ed25519PublicKey</td>
-      <td style="text-align:left">
-        <p>The public key generated for the account.</p>
-        <p><em>default:  None</em>
-        </p>
-      </td>
-    </tr>
-    <tr>
       <td style="text-align:left">
         <p><code>setAutoRenewPeriod</code>
         </p>
