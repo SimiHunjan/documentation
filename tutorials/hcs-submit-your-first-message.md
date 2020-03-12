@@ -180,6 +180,8 @@ new MirrorConsensusTopicQuery()
 
 `2020-01-17T09:01:03.990648Z received topic message: hello, HCS!`
 
+**NOTE**: It may take 10-15 seconds before the message appears on your console from the mirror node.
+
 Having trouble or have any comments, suggestions, or feedback?   
 Connect with us on [Discord](https://discordapp.com/invite/FFb9YFX)🤓!
 
