@@ -32,7 +32,7 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
       <td style="text-align:left">Cryptocurrency Transactions</td>
       <td style="text-align:left">
         <p>CryptoTransfer transactions: 10,000 tps</p>
-        <p>All other cryptocurrency operations: 13 tps</p>
+        <p>All other cryptocurrency transactions: 13 tps</p>
       </td>
     </tr>
     <tr>
