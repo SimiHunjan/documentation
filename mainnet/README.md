@@ -20,6 +20,8 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | File Service | Limited |
 | Consensus Service | Limited |
 
+#### Network Throttles
+
 <table>
   <thead>
     <tr>
