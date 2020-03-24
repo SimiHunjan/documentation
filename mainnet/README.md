@@ -24,31 +24,37 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
   <thead>
     <tr>
       <th style="text-align:left">Network Request Type</th>
-      <th style="text-align:left">Throttle</th>
+      <th style="text-align:left">Throttle (tps)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">Cryptocurrency Transactions</td>
       <td style="text-align:left">
-        <p>CryptoTransfer transactions: 10,000 tps</p>
-        <p>All other cryptocurrency transactions: 13 tps</p>
+        <p>CryptoTransfer transactions: <b>10,000 tps</b>
+        </p>
+        <p>All other cryptocurrency transactions: <b>13 tps</b>
+        </p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">Consensus Transactions</td>
       <td style="text-align:left">
-        <p>MessageSubmit transactions: 1,000 tps</p>
-        <p>getTopicInfo/createTopic/updateTopic/deleteTopic: 100 tps</p>
+        <p>MessageSubmit transactions: <b>1,000 tps</b>
+        </p>
+        <p>getTopicInfo/createTopic/updateTopic/deleteTopic: <b>100 tps</b>
+        </p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">File Transactions</td>
-      <td style="text-align:left">All transaction types: 13 tps</td>
+      <td style="text-align:left">All transaction types: <b>13 tps</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Smart Contract Transactions</td>
-      <td style="text-align:left">All transaction types: 13 tps</td>
+      <td style="text-align:left">All transaction types: <b>13 tps</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Queries</td>
