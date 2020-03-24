@@ -39,7 +39,7 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
       <td style="text-align:left">Consensus Transactions</td>
       <td style="text-align:left">
         <p>MessageSubmit transactions: 1,000 tps</p>
-        <p>All other operations: 100 tps</p>
+        <p>getTopicInfo/createTopic/updateTopic/deleteTopic: 100 tps</p>
       </td>
     </tr>
     <tr>
