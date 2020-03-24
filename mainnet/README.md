@@ -20,7 +20,46 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | File Service | Limited |
 | Consensus Service | Limited |
 
-{% hint style="info" %}
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Network Request Type</th>
+      <th style="text-align:left">Throttle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Cryptocurrency Transactions</td>
+      <td style="text-align:left">
+        <p>CryptoTransfer transactions: 10,000 tps</p>
+        <p>All other cryptocurrency operations: 13 tps</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Consensus Transactions</td>
+      <td style="text-align:left">
+        <p>MessageSubmit transactions: 1,000 tps</p>
+        <p>All other operations: 100 tps</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">File Transactions</td>
+      <td style="text-align:left">All transaction types: 13 tps</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Smart Contract Transactions</td>
+      <td style="text-align:left">All transaction types: 13 tps</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Queries</td>
+      <td style="text-align:left">6,500 tps</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Receipts</td>
+      <td style="text-align:left">unlimited (no throttle)</td>
+    </tr>
+  </tbody>
+</table>{% hint style="info" %}
 **Hedera Consensus Service Mainnet Mirror Node Access**  
 To gain access to the Hedera managed mirror node for mainnet, please complete this [form](https://learn.hedera.com/hcs-mirror-api-mainnet).
 {% endhint %}
