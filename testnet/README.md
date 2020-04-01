@@ -20,3 +20,46 @@ Transactions are currently throttled for mainnet and testnet. You will receive a
 | File Service | Limited |
 | Consensus Service | Limited  |
 
+#### Network Throttles
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Network Request Type</th>
+      <th style="text-align:left">Throttle (tps)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Cryptocurrency Transactions</td>
+      <td style="text-align:left">
+        <p>CryptoTransfer transactions: 10,000 tps</p>
+        <p>All other cryptocurrency transactions<b>: </b>13 tps</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Consensus Transactions</td>
+      <td style="text-align:left">
+        <p>MessageSubmit transactions: 1,000 tps
+          <br />createTopic: 5tps</p>
+        <p>getTopicInfo/updateTopic/deleteTopic: 100 tps</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">File Transactions</td>
+      <td style="text-align:left">All transaction types: 13 tps</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Smart Contract Transactions</td>
+      <td style="text-align:left">All transaction types: 13 tps</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Queries</td>
+      <td style="text-align:left">6,500 tps</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Receipts</td>
+      <td style="text-align:left">unlimited (no throttle)</td>
+    </tr>
+  </tbody>
+</table>
