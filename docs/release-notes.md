@@ -1,6 +1,6 @@
 # Release Notes
 
-## 0.4.1 Update
+## 0.4.1 Updates
 
 #### Hedera Services Code \(0.4.1\) 
 
