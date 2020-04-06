@@ -1,6 +1,18 @@
 # Release Notes
 
-## [0.6.0 Mirror Node Update](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.6.0)
+## 0.4.1 Update
+
+#### Hedera Services Code \(0.4.1\) 
+
+* Software update includes the ability for Hedera to dynamically set throttles on network transaction types. 
+* The following throttles would be updated to: 1000 submit messages per second and 5 topic creates per second. 
+* Reassigning of new Council Member nodes 
+
+#### Mirror Node \(0.6.0\) 
+
+* Full release notes: [https://github.com/hashgraph/hedera-mirror-node/releases](https://github.com/hashgraph/hedera-mirror-node/releases) 
+* Release focused on stability and performance improvements. 
+* End to end test coverage. 
 
 This release was mainly focused on enhancing the stability and performance of the mirror node. We improved the transaction ingestion speed from 600 to about 4000 transactions per second. At the same time, we greatly improved the resiliency and performance of the GRPC module. We also added acceptance tests to test out HCS end to end.
 
