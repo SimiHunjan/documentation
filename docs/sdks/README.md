@@ -14,8 +14,7 @@ For friendly, language-specific access to the Hedera API and its network service
 | :--- | :--- | :--- | :--- |
 | Hedera Java SDK | Hedera | Apache 2.0 | [github.com/hashgraph](https://github.com/hashgraph/hedera-sdk-java) |
 | Hedera JavaScript SDK | Hedera | Apache 2.0 | [github.com/hashgraph](https://github.com/hashgraph/hedera-sdk-js) |
-| Hedera Go SDK | Hedera |  | Coming soon... |
-| Hedera Swift SDK | Hedera |  | Coming soon... |
+| Hedera Go SDK | Hedera | Apache 2.0 | [github.com/hashgraph](https://github.com/hashgraph/hedera-sdk-go) |
 
 ## Community Supported SDKs
 
