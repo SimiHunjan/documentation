@@ -291,7 +291,7 @@ A successful run will end with the following message:
 $ ./byfn.sh down
 ```
 
-## 5. Verify Topics & Messages 
+## 6. Verify Topics & Messages 
 
 * Topics and messages created in this tutorial can be verified on any available mirror node explorer
 * At the start of the script, you can see the two HCS topic IDs that were created
