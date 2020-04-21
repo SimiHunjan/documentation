@@ -60,7 +60,7 @@ Hedera consensus nodes push new record files and signature files to the cloud st
 
 #### Mainnet:
 
-{% page-ref page="../mainnet/mirror-nodes.md" %}
+{% page-ref page="../mainnet/nodes/mirror-nodes.md" %}
 
 
 
