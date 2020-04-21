@@ -40,7 +40,7 @@ vagrant ssh
 
 
 
-Now you have your virtual envrionment ready to go. Please refer to step two Build Fabric Binaries and Docker Images in the master tutorial to continue.
+Now you have your virtual envrionment ready to go. Please refer to step two [Build Fabric Binaries and Docker Images](./#2-build-fabric-binaries-and-docker-images) in the master tutorial to continue.
 
 {% page-ref page="./" %}
 
