@@ -20,6 +20,8 @@
 
 * [HCS: Submit your first message!](tutorials/hcs-submit-your-first-message.md)
 * [Getting Started: JavaScript](tutorials/getting-started-javascript.md)
+* [Getting Started with the Hedera Consensus Service Fabric Plugin](tutorials/getting-started-with-the-hedera-consensus-service-fabric-plugin/README.md)
+  * [Virtual Environment Set-up](tutorials/getting-started-with-the-hedera-consensus-service-fabric-plugin/virtual-environment-set-up.md)
 
 ## Core Concepts
 
