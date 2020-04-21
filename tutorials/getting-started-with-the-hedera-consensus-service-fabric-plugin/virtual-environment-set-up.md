@@ -4,7 +4,7 @@ Enables developers to run the HCS Hyperledger Fabric sample network using a virt
 
 ## Requirements
 
-* [Hedera testnet](https://docs.hedera.com/guides/testnet/testnet-access) account ID and account private key
+* [Hedera testnet](../../testnet/testnet-access.md) account ID and account private key
 * [fabric-hcs repository](https://github.com/hashgraph/fabric-hcs/tree/hcs-dev) 
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 * [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
