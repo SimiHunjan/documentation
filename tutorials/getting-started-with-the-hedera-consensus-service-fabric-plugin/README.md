@@ -83,7 +83,7 @@ If you would like to run the sample using a virtual environment, please follow t
 ### Hedera Consensus Service
 
 * Testnet account ID and private key
-  * Please follow the instructions [here](https://docs.hedera.com/guides/testnet/testnet-access)
+  * Please follow the instructions [here](../../testnet/testnet-access.md)
 
 ### fabric-hcs Repository
 
