@@ -10,7 +10,7 @@ Hyperledger Fabric is one of the most popular private/permissioned enterprise bl
 
 In this tutorial, you will create a Hyperledger Fabric network that leverages the Hedera Consensus Service Fabric plug-in to use Hedera Hashgraph as the ordering service via the first-network sample. The HCS Hyperledger Fabric network will be composed of two organizations. Each organization will host two peer nodes. The two organizations will privately communicate and transact within a Hyperledger Fabric channel. 
 
-If you have a sense of the Hyperledger Fabric network and the first-network sample, you can skip down to the "Requirements" section to get started.
+If you already have experience with the Hyperledger Fabric network and the first-network sample, you can skip down to the requirements section to get started.
 
 ## Transaction Flow
 
