@@ -195,7 +195,7 @@ $ cd first-network
 $ nano hedera_env.json
 ```
 
-* Enter your Hedera account ID \(e.g. 0.0.10\) in the **operatorId** field
+* Enter your Hedera account ID \(e.g. 0.0.1234\) in the **operatorId** field
 * Enter your account private key in the **operatorKey** field
 
 ```javascript
