@@ -264,6 +264,8 @@ Please note it's necessary to set the timeout to 20 seconds since otherwise some
 * The script generates two HCS topics
   * One topic will be for the Hyperledger Fabric system channel
   * One topic will be for the Hyperledger Fabric application channel
+  * HCS topics n this example are configured so that anyone can submit messages to them
+  * HCS messages can be configured to be private topics where the sender would require the `submitKey` to successfully publish messages to them
 * Transactions submitted to either of these channels will be visible from a mirror node [explorer](https://docs.hedera.com/guides/testnet/mirror-nodes)
   * Transactions can be fragmented into smaller chunks resulting in multiple HCS messages for a single transaction
 
