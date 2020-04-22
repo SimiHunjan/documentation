@@ -16,7 +16,7 @@ If you already have experience with the Hyperledger Fabric network and the first
 
 1. A client application creates a transaction proposal and sends it to Hyperledger Fabric network peers. The transaction proposal is endorsed \(signed\) by the Hyperledger Fabric network peers. The endorsed transaction proposal is sent back to the client application.
 2. Client application submits the endorsed transaction to the Hyperledger Fabric network HCS ordering node. That Hyperledger Fabric ordering node interacts with the HCS fabric plugin as the ordering service
-3. Fabric transactions are fragmented into many messages and associated with topic ID
+3. Fabric transactions are fragmented into many messages and submitted to the Hedera network against a particular topic ID
 4. Hedera mainnet nodes timestamp and order the fragmented messages
 5. Hedera mirror nodes read the fragmented messages in consensus order from a Hedera mainnet
 6. Hedera mirror node relays the ordered messages back to the Hyperledger Fabric ordering node 
