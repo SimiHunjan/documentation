@@ -258,7 +258,7 @@ $ ./byfn.sh up -t 20
 * Enter "Y" to accept the 20 second timeout and CLI delay of 3 seconds
 
 {% hint style="info" %}
-Please note it's necessary to set the timeout to 20 seconds since otherwise some checks in the script may fail due to the nature that HCS has a larger consensus delay than raft/kafka based ordering service.
+Please note it's necessary to set the timeout to 20 seconds since otherwise some checks in the script may fail due to HCS having a larger consensus delay than raft/kafka based ordering service.
 {% endhint %}
 
 * The script generates two HCS topics
