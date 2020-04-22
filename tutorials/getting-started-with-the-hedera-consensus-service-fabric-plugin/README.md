@@ -18,7 +18,7 @@ If you already have experience with the Hyperledger Fabric network and the first
 2. Client application submits the endorsed transaction to the Hyperledger Fabric network HCS ordering node. That Hyperledger Fabric ordering node interacts with the HCS fabric plugin as the ordering service
 3. Fabric transactions are fragmented into many messages and submitted to the Hedera network against a particular topic ID
 4. Hedera mainnet nodes timestamp and order the fragmented messages
-5. Hedera mirror nodes read the fragmented messages in consensus order from a Hedera mainnet
+5. Hedera mirror nodes read the fragmented messages in consensus order from the Hedera mainnet
 6. Hedera mirror node relays the ordered messages back to the Hyperledger Fabric ordering node 
 7. Hyperledger Fabric ordering nodes reassembles the fragmented messages into fabric transactions, form fabric blocks, and communicate the blocks to the Hyperledger Fabric peer nodes
 8. Hyperledger Fabric peer nodes update to have the same world state
