@@ -241,7 +241,7 @@ Operator:
 Please make sure you have entered your Hedera information correctly with no syntax errors as it will cause issues when trying to run the network later.
 {% endhint %}
 
-⭐ You have now successfully set up your configuration variables for the Hedera operator and for the HCS Hyperledger ordering node
+⭐ You have now successfully set up your configuration variables for the Hedera operator and for the HCS Hyperledger ordering node.
 
 ## 4. Run Your Network
 
