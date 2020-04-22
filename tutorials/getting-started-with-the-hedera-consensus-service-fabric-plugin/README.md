@@ -48,7 +48,7 @@ A Hedera mirror node reads the ordered messages from a Hedera mainnet node and c
 
 **Hedera Mainnet Node**
 
-The Hedera mainnet node receives the Fabric transaction in fragmented message transactions from the HCS Hyperledger ordering node to be ordered, endorsed, and timestamped by the Hedera network.
+A Hedera mainnet node receives the Fabric transaction in fragmented message transactions from the HCS Hyperledger ordering node to be ordered, endorsed, and timestamped by the Hedera network.
 
 **fabric-hcs Repository**
 
