@@ -306,7 +306,8 @@ generated HCS topics: 0.0.23419 0.0.23420
 * You will be able to view the application channel and system channel topics and all associated messages from this example
   * A single Fabric transaction sent to an ordering node could result in multiple  HCS consensus messages as HCS messages have a 6k message size limit
   * i.e. there may not be a 1:1 correlation between a Fabric transaction and HCS message
-* Each message will be displayed in an encrypted format, so you will not be able to read the message content
+* A fabric transaction payload is encrypted by the ordering node therefore the subsequent HCS transaction payload is also encrypted
+*  All messages on the mirror node explorer will be displayed in encrypted format. 
 
 {% hint style="info" %}
 Make sure you have selected the testnet network toggle in the explorer as the topics and messages created through this tutorial will not appear on the main network.
