@@ -302,7 +302,7 @@ generated HCS topics: 0.0.23419 0.0.23420
 
 * Visit a Hedera [mirror node explorer](https://docs.hedera.com/guides/testnet/mirror-nodes) to verify the topics and messages that were created on testnet by searching the two topic IDs
 * You will be able to view the application channel and system channel topics and all associated messages from this example
-  * A single Fabric transaction sent to an ordering node could result in multiple  HCS consensus messages as HCS messages have a 4k message size limit
+  * A single Fabric transaction sent to an ordering node could result in multiple  HCS consensus messages as HCS messages have a 6k message size limit
   * i.e. there may not be a 1:1 correlation between a Fabric transaction and HCS message
 * Each message will be displayed in an encrypted format, so you will not be able to read the message content
 
