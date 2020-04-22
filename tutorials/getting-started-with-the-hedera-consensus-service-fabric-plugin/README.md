@@ -217,7 +217,7 @@ $ nano hedera_env.json
   * If you are using an IDE, you may skip this command and edit the file
 
 ```text
-$ nano orderer.yaml file
+$ nano orderer.yaml
 ```
 
 * Scroll down to the "**SECTION: Hcs**"  heading 
