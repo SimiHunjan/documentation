@@ -1,16 +1,75 @@
 # Release Notes
 
+{% hint style="info" %}
+Mirror node **v0.8.1** is currently on mainnet.
+{% endhint %}
+
+## [Mirror Node \(v0.9.1\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.9.1)
+
+Small bug fix release to address not being able to handle address book updates that span multiple transactions.
+
+## [Mirror Node \(v0.9.0\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.9.0)
+
+This release contains another new REST API for our [consensus service](https://www.hedera.com/consensus-service/). You can now retrieve all topic messages in a particular topic, with additional filtering by sequence number and consensus timestamp. Here's an example:
+
+`GET /api/v1/topic/7?sequencenumber=gt:2&timestamp=lte:1234567890.000000006&limit=2`
+
+```text
+{
+  "messages": [
+    {
+      "consensus_timestamp": "1234567890.000000003",
+      "topic_id": "0.0.7",
+      "message": "bWVzc2FnZQ==",
+      "running_hash": "cnVubmluZ19oYXNo",
+      "sequence_number": 3
+    },
+    {
+      "consensus_timestamp": "1234567890.000000004",
+      "topic_id": "0.0.7",
+      "message": "bWVzc2FnZQ==",
+      "running_hash": "cnVubmluZ19oYXNo",
+      "sequence_number": 4
+    }
+  ],
+  "links": {
+     "next": "/api/v1/topic/7?sequencenumber=gt:2&timestamp=lte:1234567890.000000006&timestamp=gt:1234567890.000000004&limit=2"
+  }
+}
+```
+
+The other big feature of this release is [Kubernetes](https://kubernetes.io/) support. We've create a [Helm](https://helm.sh/) chart that can be used to deploy a highly available Mirror Node with a single command. This feature is still under heavy development as we work towards converting our current deployments to this new approach.
+
+## [Mirror Node \(v0.8.1\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.8.1)
+
+Small bug fix release to fix a packaging issue.
+
+## [Mirror Node \(v0.8.0\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.8.0)
+
+Mirror node v0.8.0 is here! We're made great strides in making the mirror node easier to run and manage. In particular, we added support for [requester pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) buckets. This will allow anyone to run a mirror node as long as they are willing to pay for the cost to retrieve the data. Currently only Hedera and a few partners have access to the bucket, so enabling this will open up that data to our community. We are still working on a migration of the buckets to this model, so stay tuned.
+
+We also added two new experimental REST APIs to retrieve HCS data. Firstly, we added `/api/v1/topic/message/${consensusTimestamp}` to retrieve a topic message by its consensus timestamp. Secondly, we added `/api/v1/topic/${topic}/message/${seqNum}` to retrieve a particular topic message by its sequence number from a topic. These APIs are considered alpha and may changed or be removed in the future. We also dramatically increased test coverage for the REST APIs and squashed some bugs in the process.
+
+For our GRPC API, we had to switch from R2DBC to Hibernate to reach the scale and stability that we needed. In doing so, we can now support a lot more concurrent subscribers at a higher throughput. It should also finally put to rest any stability concerns with the GRPC component.
+
+There are a few breaking changes that we had to make. We now no longer write and store record or balance files to the filesystem after they are inserted into the database. If you still need these files, you can set `hedera.mirror.parser.balance.keepFiles` and `hedera.mirror.parser.record.keepFiles` to true.
+
+Also, we moved the persist properties to be grouped under a new path. That is we moved options like `hedera.mirror.parser.record.persistTransactionBytes` to `hedera.mirror.parser.record.persist.transactionBytes`. Please update your local configuration accordingly.
+
+## [Mirror Node \(v0.7.0\) ](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.7.0)
+
+0.7.0 focuses on refactoring the record file parsing to decouple the parsing from the persisting of data. This refactoring is laying the groundwork for additional performance improvements and allowing additional downstream components to register for notification of the transactions.
+
 ## 0.4.1 Updates
 
-#### Hedera Services Code \(0.4.1\) 
+#### Hedera Services Code \(v0.4.1\) 
 
 * Software update includes the ability for Hedera to dynamically set throttles on network transaction types. 
 * The following throttles would be updated to: 1000 submit messages per second and 5 topic creates per second. 
 * Reassigning of new Council Member nodes 
 
-#### Mirror Node \(0.6.0\) 
+#### [Mirror Node \(v0.6.0\) ](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.6.0)
 
-* Full release notes: [https://github.com/hashgraph/hedera-mirror-node/releases](https://github.com/hashgraph/hedera-mirror-node/releases) 
 * Release focused on stability and performance improvements. 
 * End to end test coverage. 
 
@@ -26,7 +85,7 @@ Please note that one potentially breaking change in this release is to reject su
 **Note:** Mainnet update is scheduled to occur on February 10, 2020.
 {% endhint %}
 
-#### Hedera Services Code \(0.4.0\)
+#### Hedera Services Code \(v0.4.0\)
 
 * Say hello to the Hedera Consensus Service! This release is the first to include HCS, allowing verifiable timestamping and ordering of application messages.  
 * Network pricing has been updated to include HCS transactions and queries 
@@ -37,7 +96,7 @@ Please note that one potentially breaking change in this release is to reject su
 * CryptoUpdate - TransactionReceipt response to CryptoUpdate no longer includes the accountID updated
 * CryptoTransfer – CryptoTransfer transactions resulting in INSUFFICIENT\_ACCOUNT\_BALANCE error no longer list Transfers in the TransactionRecord transferList that were not applied
 
-#### Mirror Node \(0.5.3\) 
+#### Mirror Node \(v0.5.3\) 
 
 * Now supports all HCS functionality including a streaming gRPC API for message topic subscription. 
 * Changed how the mirror node verifies mainnet consensus. Mirror node now waits for at least third of node signatures rather than greater than two thirds to verify consensus.
