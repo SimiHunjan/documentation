@@ -39,12 +39,12 @@ A consensus service plugin for the Hyperledger Fabric network that leverages the
 
 **Hedera Mirror Node**
 
-A Hedera mirror node is a component of the Hedera Consensus Service that reads the ordered messages from a Hedera mainnet node and communicates that information back to the Hyperledger Fabric network.  Each message has the following information:
+A Hedera mirror node reads the ordered messages from a Hedera mainnet node and communicates that information back to the Hyperledger Fabric network.  Each message has the following information:
 
-* Timestamp
+* ConsensusTimestamp
 * Message Body
-* Running Hash
-* Sequence Number 
+* Topic Running Hash
+* Topic Sequence Number 
 
 **Hedera Mainnet Node**
 
