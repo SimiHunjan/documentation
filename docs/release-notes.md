@@ -1,8 +1,9 @@
 # Release Notes
 
-{% hint style="info" %}
-Mirror node **v0.8.1** is currently on mainnet.
-{% endhint %}
+| Network | Version |
+| :--- | :--- |
+| **Mainnet** | Mirror Node v0.8.1 |
+| **Testnet** | Mirror Node v0.9.1 |
 
 ## [Mirror Node \(v0.9.1\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.9.1)
 
