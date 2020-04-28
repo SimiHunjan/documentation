@@ -105,7 +105,7 @@ Download and install the following if you do not already have them on your compu
 * Docker and Docker Compose
   * [Download Docker](https://www.docker.com/get-docker) 
   * Docker version 17.06.2-ce or greater is required
-  * Check to see if you have it installed from your terminal: `docker --version`
+  * Check to see if you have it installed from your terminal: `docker --version && docker compose --version`
 * Go Programming Language
   * [Download Go](https://golang.org/dl/)
   * Go version 1.13.x is required
