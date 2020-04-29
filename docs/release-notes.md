@@ -7,7 +7,7 @@
 
 ## Upcoming Release \[May 5, 2020\]
 
-**Hedera Services Code \(0.5.0\)**   
+**Hedera Services Code \(v0.5.0\)**   
   
 In Hedera Services v0.5.0, we’ve added TLS for trusted communication with nodes on the Hedera network. For better security, only TLS v1.2 and v1.3 with TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384 and TLS\_RSA\_WITH\_AES\_256\_GCM\_SHA384 cipher suites are allowed.   
   
@@ -20,6 +20,10 @@ Hedera File Service also has several fixes of note. First, we enabled immutable 
 For Hedera Smart Contract Service, we’ve improved visibility into transactions that create child contracts using the new keyword by putting created ids in the record of the transaction; and we now propagate parent contract metadata to created children.   
   
 Finally, if you use the throttle properties in system file 0.0.121 to estimate network performance limits, you will also be interested in a new standardized format of those properties. The lists below contain these and other minor updates, bug fixes, and documentation changes. 
+
+**Mirror Node \(v0.9.0\)**
+
+Mainnet mirror nodes will be upgraded to [v0.9.0](release-notes.md#mirror-node-v-0-9-0). 
 
 **Enhancements** 
 
