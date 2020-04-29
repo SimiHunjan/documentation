@@ -23,7 +23,7 @@ Finally, if you use the throttle properties in system file 0.0.121 to estimate n
 
 **Mirror Node \(v0.9.0\)**
 
-Mainnet mirror nodes will be upgraded to [v0.9.0](release-notes.md#mirror-node-v-0-9-0). 
+Mainnet mirror nodes will be upgraded to [v0.9.0](release-notes.md#mirror-node-v-0-9-0).  
 
 **Enhancements** 
 
