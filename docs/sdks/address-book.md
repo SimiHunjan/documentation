@@ -6,7 +6,7 @@ The **testnet** address book information is also available in the Hedera portal.
 
 ### Example:
 
-Get tesnet address book
+Get testnet address book
 
 {% tabs %}
 {% tab title="Java" %}
