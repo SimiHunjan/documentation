@@ -2,6 +2,10 @@
 
 Transactions are requests that are submitted by a client to a node in the Hedera network. Every transaction has a fee associated with it that will pay for processing the transaction. The following table lists the transaction type requests for each service.
 
+{% hint style="info" %}
+Transactions have a 6144 kb transaction size limit. This includes the signatures on the transaction.
+{% endhint %}
+
 | Cryyptocurrency Accounts | File Service | Smart Contracts |
 | :--- | :--- | :--- |
 | AccountCreateTransaction | FileCreateTransaction | ContractCreateTransaction |
