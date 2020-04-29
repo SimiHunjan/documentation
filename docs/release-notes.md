@@ -21,9 +21,9 @@ For Hedera Smart Contract Service, we’ve improved visibility into transactions
   
 Finally, if you use the throttle properties in system file 0.0.121 to estimate network performance limits, you will also be interested in a new standardized format of those properties. The lists below contain these and other minor updates, bug fixes, and documentation changes. 
 
-**Mirror Node \(v0.9.0\)**
+**Mirror Node \(v0.9.1\)**
 
-Mainnet mirror nodes will be upgraded to [v0.9.0](release-notes.md#mirror-node-v-0-9-0).  
+Mainnet mirror nodes will be upgraded to [v0.9.1](release-notes.md#mirror-node-v-0-9-1). 
 
 **Enhancements** 
 
