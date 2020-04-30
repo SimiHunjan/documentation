@@ -1,6 +1,6 @@
 # Duration
 
-The length of a period of time. This is an identical data structure to the protobuf Duration.proto \(see the comments in https:github.com/google/protobuf/blob/master/src/google/protobuf/duration.proto\)
+A length of time in seconds. 
 
 | Field | Description |
 | :--- | :--- |
