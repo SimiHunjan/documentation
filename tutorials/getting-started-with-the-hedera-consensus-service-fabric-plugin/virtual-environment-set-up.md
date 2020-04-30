@@ -15,7 +15,7 @@ Enables developers to run the HCS Hyperledger Fabric sample network using a virt
 * Clone the repository and rename the project folder to "fabric"
 
 ```text
-git clone https://github.com/hashgraph/fabric-hcs.git fabric
+git clone https://github.com/hashgraph/fabric-hcs fabric
 cd fabric
 ```
 
