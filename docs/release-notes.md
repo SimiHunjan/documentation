@@ -2,7 +2,7 @@
 
 | Network | Version |
 | :--- | :--- |
-| **Mainnet** | Mirror Node v0.8.1 |
+| **Mainnet** | Mirror Node v0.9.1 |
 | **Testnet** | Mirror Node v0.9.1 |
 
 ## Upcoming Release [\[May 5, 2020\]](https://status.hedera.com/incidents/sckgl7377493)
