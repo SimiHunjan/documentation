@@ -6,7 +6,7 @@
 * Contract ID
 * Receipt
 * Expiration time
-* Number of bytes of storage bein used
+* Number of bytes of storage being used
 * Memo
 
 | Constructor | Description |
