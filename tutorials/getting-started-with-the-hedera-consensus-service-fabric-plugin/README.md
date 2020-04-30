@@ -143,7 +143,7 @@ $ mkdir -p $GOPATH/src/github.com/hyperledger && cd $GOPATH/src/github.com/hyper
 * Navigate to the **fabric** directory 
 
 ```text
-$ git clone https://github.com/hashgraph/fabric-hcs.git fabric
+$ git clone https://github.com/hashgraph/fabric-hcs fabric
 $ cd fabric
 ```
 
