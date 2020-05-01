@@ -12,7 +12,7 @@ Accounts are the central starting point for Hedera. Accounts are stored on the p
 
 Accounts are comprised of:
 
-* Key pair
+* Keys
 * Account ID
 * Balance
 * Livehash\(es\)
