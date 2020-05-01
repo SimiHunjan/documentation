@@ -2,15 +2,15 @@
 
 | RPC | Request | Response | Comments |
 | :--- | :--- | :--- | :--- |
-| `createContract` | Transaction | TransactionResponse | Creates a contract by submitting the transaction. The grpc server returns the TransactionResponse |
-| `updateContract` | Transaction | TransactionResponse | Updates a contract with the content by submitting the transaction. The grpc server returns the TransactionResponse |
-| `contractCallMethod` | Transaction | TransactionResponse | Calls a contract by submitting the transaction. The grpc server returns the TransactionResponse |
-| `getContractInfo` | Query | Response | Retrieves the contract information by submitting the query. The grpc server returns the Response |
-| `contractCallLocalMethod` | Query | Response | Calls a smart contract by submitting the query. The grpc server returns the Response |
-| `ContractGetBytecode` | Query | Response | Retrieves the byte code of a contract by submitting the query. The grpc server returns the Response |
-| `getBySolidityID` | Query | Response | Retrieves a contract\(using Solidity ID\) by submitting the query. The grpc server returns the Response |
-| `getTxRecordByContractID` | Query | Response | Retrieves a contract\(using contract ID\) by submitting the query. The grpc server returns the Response |
-| `deleteContract` | Transaction | TransactionResponse | Delete a contract instance\(mark as deleted until it expires\), and transfer hbars to the specified account. The grpc server returns the TransactionResponse |
-| `systemDelete` | Transaction | TransactionResponse | Deletes a smart contract by submitting the transaction when the account has admin privileges on the file. The grpc server returns the TransactionResponse |
-| `systemUndelete` | Transaction | TransactionResponse | UnDeletes a smart contract by submitting the transaction when the account has admin privileges on the file. The grpc server returns the TransactionResponse |
+| `createContract` | Transaction | TransactionResponse | Creates a contract |
+| `updateContract` | Transaction | TransactionResponse | Updates a contract with the content |
+| `contractCallMethod` | Transaction | TransactionResponse | Calls a contract |
+| `getContractInfo` | Query | Response | Retrieves the contract information |
+| `contractCallLocalMethod` | Query | Response | Calls a smart contract to be run on a single node |
+| `ContractGetBytecode` | Query | Response | Retrieves the byte code of a contract |
+| `getBySolidityID` | Query | Response | Retrieves a contract by its Solidity address |
+| `getTxRecordByContractID` | Query | Response | Retrieves the 25-hour records stored for a contract |
+| `deleteContract` | Transaction | TransactionResponse | Deletes a contract instance and transfers any remaining hbars to a specified receiver |
+| `systemDelete` | Transaction | TransactionResponse | Deletes a contract if the submitting account has network admin privileges |
+| `systemUndelete` | Transaction | TransactionResponse | Undeletes a contract if the submitting account has network admin privileges |
 
