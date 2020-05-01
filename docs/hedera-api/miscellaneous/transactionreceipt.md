@@ -2,7 +2,7 @@
 
 ## TransactionReceipt
 
-The consensus result for a transaction, which might not be currently known, or may succeed or fail.
+The summary of a transaction’s result so far. If the transaction has not reached consensus, this result will be necessarily incomplete.
 
 <table>
   <thead>
@@ -17,37 +17,40 @@ The consensus result for a transaction, which might not be currently known, or m
       <td style="text-align:left">status</td>
       <td style="text-align:left"><a href="responsecode.md#responsecodeenum">ResponseCodeEnum</a>
       </td>
-      <td style="text-align:left">whether the transaction succeeded or failed (or is unknown)</td>
+      <td style="text-align:left">The consensus status of the transaction; is UNKNOWN if consensus has not
+        been reached, or if the associated transaction did not have a valid payer
+        signature</td>
     </tr>
     <tr>
       <td style="text-align:left">accountID</td>
       <td style="text-align:left"><a href="../basic-types/accountid.md">AccountID</a>
       </td>
-      <td style="text-align:left">The account ID, if a new account was created</td>
+      <td style="text-align:left">In the receipt of a CryptoCreate, the id of the newly created account</td>
     </tr>
     <tr>
       <td style="text-align:left">fileID</td>
       <td style="text-align:left"><a href="../basic-types/fileid.md">FileID</a>
       </td>
-      <td style="text-align:left">The file ID, if a new file was created</td>
+      <td style="text-align:left">In the receipt of a FileCreate, the id of the newly created file</td>
     </tr>
     <tr>
       <td style="text-align:left">contractID</td>
       <td style="text-align:left"><a href="../basic-types/contractid.md">ContractID</a>
       </td>
-      <td style="text-align:left">The contract ID, if a new smart contract instance was created</td>
+      <td style="text-align:left">In the receipt of a ContractCreate, the id of the newly created contract</td>
     </tr>
     <tr>
       <td style="text-align:left">exchangeRate</td>
       <td style="text-align:left"><a href="exchangerate.md#exchangerateset">ExchangeRateSet</a>
       </td>
-      <td style="text-align:left">exchange rate set of Hbar to cents (USD)</td>
+      <td style="text-align:left">The exchange rates in effect when the transaction reached consensus</td>
     </tr>
     <tr>
       <td style="text-align:left">topicID</td>
       <td style="text-align:left"><a href="../basic-types/topicid.md">TopicID</a>
       </td>
-      <td style="text-align:left">TopicID of a newly created consensus service topic</td>
+      <td style="text-align:left">In the receipt of a ConsensusCreateTopic, the id of the newly created
+        topic.</td>
     </tr>
     <tr>
       <td style="text-align:left">topicSequenceNumber</td>
