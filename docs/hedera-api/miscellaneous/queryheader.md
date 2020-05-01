@@ -14,7 +14,7 @@ The client uses the ResponseType to request that the node send it just the answe
 | Enum Name | Description |
 | :--- | :--- |
 | ANSWER\_ONLY | Response returns answer |
-| ANSWER\_STATE\_PROOF | Response returns both answer and state proof |
+| ANSWER\_STATE\_PROOF | Response returns both answer and state proof \(not yet supported\) |
 | COST\_ANSWER | Response returns the cost of answer |
-| COST\_ANSWER\_STATE\_PROOF | Response returns the total cost of answer and state proof |
+| COST\_ANSWER\_STATE\_PROOF | Response returns the total cost of answer and state proof \(not yet supported\) |
 

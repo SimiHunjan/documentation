@@ -6,9 +6,9 @@
 | updateAccount | Transaction | TransactionResponse | Updates an account by submitting the transaction. The grpc server returns the TransactionResponse |
 | cryptoTransfer | Transaction | TransactionResponse | Initiates a transfer by submitting the transaction. The grpc server returns the TransactionResponse |
 | cryptoDelete | Transaction | TransactionResponse | Deletes and account by submitting the transaction. The grpc server returns the TransactionResponse |
-| addClaim | Transaction | TransactionResponse | Adds a claim by submitting the transaction. The grpc server returns the TransactionResponse |
-| deleteClaim | Transaction | TransactionResponse | Deletes a claim by submitting the transaction. The grpc server returns the TransactionResponse |
-| getClaim | Query | Response | Retrieves the claim for an account by submitting the query. |
+| addLiveHash | Transaction | TransactionResponse | \(NOT CURRENTLY SUPPORTED\) Adds a livehash |
+| deleteLiveHash | Transaction | TransactionResponse | \(NOT CURRENTLY SUPPORTED\) Deletes a livehash |
+| getLiveHash | Query | Response | \(NOT CURRENTLY SUPPORTED\) Retrieves a livehash for an account |
 | getAccountRecords | Query | Response | Retrieves the record\(fetch by AccountID ID\) for an account by submitting the query. |
 | cryptoGetBalance | Query | Response | Retrieves the balance for an account by submitting the query. |
 | getAccountInfo | Query | Response | Retrieves the account information for an account by submitting the query. |

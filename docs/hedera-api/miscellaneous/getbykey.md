@@ -8,7 +8,7 @@ the ID for a single entity \(account, claim, file, or smart contract instance\)
 | :--- | :--- | :--- | :--- |
 | entity | oneof |  |  |
 |  | accountID | [AccountID](../basic-types/accountid.md) | The Account ID for the cryptocurrency account |
-|  | claim | Claim | The claim details attached to an account |
+|  | LiveHash | LIveHash | The LIveHash details attached to an account |
 |  | fileID | [FileID](../basic-types/fileid.md) | The file ID of the file |
 |  | contractID | [ContractID](../basic-types/contractid.md) | The smart contract ID that identifies instance |
 
