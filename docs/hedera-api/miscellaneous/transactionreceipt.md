@@ -52,8 +52,8 @@ The consensus result for a transaction, which might not be currently known, or m
     <tr>
       <td style="text-align:left">topicSequenceNumber</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Updated sequence number for a consensus service topic. The result of a
-        ConsensusSubmitMessage.</td>
+      <td style="text-align:left">In the receipt of a ConsensusSubmitMessage, the new sequence number of
+        the topic that received the message</td>
     </tr>
     <tr>
       <td style="text-align:left">topicRunningHash</td>
