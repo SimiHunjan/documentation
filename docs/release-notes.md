@@ -39,8 +39,8 @@ Mainnet mirror nodes will be upgraded from v0.8.1 to [v0.9.1](release-notes.md#m
 **Bug fixes** 
 
 * Use message SHA-384 hash in running hash 
-* Enable immutable files Relax 
-* FileDelete signing requirements 
+* Enable immutable files  
+* Relax FileDelete signing requirements 
 * Fix sbh calculation in 
 * FileUpdate Return metadata for deleted files
 * Enforce receiver signing requirements during contract execution 
