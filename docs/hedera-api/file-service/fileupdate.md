@@ -2,7 +2,7 @@
 
 ## FileUpdateTransactionBody
 
-Modify some of the metadata for a file. Any null field is ignored \(left unchanged\). Any field that is null is left unchanged. If contents is non-null, then the file's contents will be replaced with the given bytes. This transaction must be signed by all the keys for that file. If the transaction is modifying the keys field, then it must be signed by all the keys in both the old list and the new list.
+Modify the metadata and/or contents of a file. If a field is not set in the transaction body, the corresponding file attribute will be unchanged. This transaction must be signed by all the keys in the key list of the file being updated. If the keys themselves are being update, then the transaction must also be signed by all the new keys.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
