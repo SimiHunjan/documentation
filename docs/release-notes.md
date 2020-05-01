@@ -158,6 +158,8 @@ Please note that one potentially breaking change in this release is to reject su
 * Please see the Mirror Node releases page for the full list of changes [here](https://github.com/hashgraph/hedera-mirror-node/releases).
 * We occasionally may encounter a situation where an additional 15-20 second delay in message round trip time is experienced and subscriber connections are dropped. No messages are lost, and the consensus time is not affected. Clients are encouraged to reconnect. This issue will be fixed in a subsequent release of the Hedera mirror node. Some third-party mirror nodes should not be affected by this issue. We also don't expect it to impact the exchanges using the REST end point for the mirror node. 
 
+### Miscellaneous 
+
 #### SDKs 
 
 * Java SDK has been updated to support the Hedera Consensus Service
