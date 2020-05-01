@@ -5,7 +5,7 @@
 | Field | Type | Description |
 | :--- | :--- | :--- |
 | header | ​[QueryHeader](../miscellaneous/queryheader.md)​ | Standard info sent from client to node, including the signed payment, and what kind of response is requested \(cost, state proof, both, or neither\). |
-| topicID | ​[TopicID](../basic-types/topicid.md)​ | Topic to retrieve info about \(the parameters and running state of\). |
+| topicID | ​[TopicID](../basic-types/topicid.md)​ | The Topic for which information is being requested |
 
 ‌
 
