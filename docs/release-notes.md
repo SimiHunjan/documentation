@@ -57,6 +57,20 @@ Mainnet mirror nodes will be upgraded from v0.8.1 to [v0.9.1](release-notes.md#m
 * Replace “claim” with “livehash” as appropriate
 * Standardize and clarify HAPI doc
 
+## [Mirror Node \(v0.10.0\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.10.0)
+
+In preparation for Hedera Node release 0.5.0, we're releasing v0.10.0 to support the latest version of [HAPI](https://docs.hedera.com/guides/docs/hedera-api). The changes include renaming Claims to LiveHash and new response codes. One important HAPI change is the addition of a `topicRunningHashVersion` to the transaction record. This change was necessary as the way the topic running hash is changing with the release of 0.5.0. As a result, the Hedera Mirror Node added this new field to its database and a migration is ran to populate it with either the new or old version depending upon the release date of 0.5.0.
+
+Unfortunately, this necessitated adding a required field `hedera.mirror.topicRunningHashV2AddedTimestamp` to control this behavior and will fail on startup if this is not populated. This is just a temporary measure. Once Hedera Node 0.5.0 is released to testnet and mainnet we will update this so it's automatically populated with the known date.
+
+Other changes include adding Google PubSub support to publish JSON representing the `Transaction` and `TransactionRecord` protobuf to a message queue for external consumption. We've also added REST API metrics and added Traefik as an API gateway for our helm chart.
+
+#### Breaking changes
+
+We've had to remove our event stream support. This area of the code was never enabled and was untested and was incurring technical debt without providing any benefit. If it becomes necessary in the future, we can re-add it within our newly refactored framework.
+
+The new `/api/v1/topics/:id` alpha REST API that was added in 0.9 has been changed to `/api/v1/topics/:id/messages`. This change was made to align the API with the other topic message APIs as it refers to the messages entity and not the topic entity.
+
 ## [Mirror Node \(v0.9.1\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.9.1)
 
 Small bug fix release to address not being able to handle address book updates that span multiple transactions.
