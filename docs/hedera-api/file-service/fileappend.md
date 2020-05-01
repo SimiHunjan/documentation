@@ -6,6 +6,6 @@
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| fileID | ​[FileID](/@docs-hedera/s/hedera-api/basic-types-1/untitled-2)​ | The file ID of the file to which the bytes are appended to |
-| contents | ​Content | The bytes to append to the contents of the file |
+| fileID | ​[FileID](/@docs-hedera/s/hedera-api/basic-types-1/untitled-2)​ | The file to which the bytes will be appended |
+| contents | ​Content | The bytes that will be appended to the end of the specified file |
 
