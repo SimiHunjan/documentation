@@ -15,7 +15,7 @@ Hashgraph is a distributed consensus algorithm and data structure that is fast, 
 The following features of the Hedera mainnet are still under development and therefore not yet available:
 
 * State Proofs
-* Claims
+* Live Hashes
 * Staking
 
 ## Have Feedback?

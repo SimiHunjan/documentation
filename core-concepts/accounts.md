@@ -53,7 +53,7 @@ Accounts, like files and smart contracts, take up storage on the network. Accoun
 
 At Open Access, the maximum autoRenewPeriod for an account, file, or smart contract will be limited to 3 months \(7890000 seconds\).
 
-## Livehashes
+## LiveHash
 
-Livehashes are revocable files attached to a specific account. They can be used to act as a claim; defining ownership of a hash to a file with the attached signatures validating a third parties approval of said claim.
+A hash \(presumably of some kind of credential or certificate\), along with a list of keys \(each of which is either a primitive or a threshold key\). Each of them must reach its threshold when signing the transaction, to attach this livehash to this account. At least one of them must reach its threshold to delete this livehash from this account.
 
