@@ -2,13 +2,13 @@
 
 ## ExchangeRate
 
-Values from these proto denotes habr and cents\(USD\) conversion
+An exchange rate between hbar and cents \(USD\) and the time at which the exchange rate will expire, and be superseded by a new exchange rate.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| hbarEquiv |  | value which denote habar equivalent to cent |
-| centEquiv |  | value which denote cents \(USD\) equivalent to Hbar} |
-| expirationTime | [TimestampSeconds](timestamp.md#timestampseconds) | expired time in seconds for this exchange rate |
+| hbarEquiv |  | Denominator in calculation of exchange rate between hbar and cents |
+| centEquiv |  | Numerator in calculation of exchange rate between hbar and cents |
+| expirationTime | [TimestampSeconds](timestamp.md#timestampseconds) | Expiration time in seconds for this exchange rate |
 
 ## ExchangeRateSet
 
@@ -16,6 +16,6 @@ Two sets of exchange rate
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| currentRate | [ExchangeRate](exchangerate.md#exchangerate) | Current rate of Exchange of Hbar to cents |
-| nextRate | [ExchangeRate](exchangerate.md#exchangerate) | Next rate exchange of Hbar to cents |
+| currentRate | [ExchangeRate](exchangerate.md#exchangerate) | Current exchange rate |
+| nextRate | [ExchangeRate](exchangerate.md#exchangerate) | Next exchange rate which will take effect when current rate expires |
 
