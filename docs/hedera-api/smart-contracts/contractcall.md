@@ -2,7 +2,11 @@
 
 ## **ContractCallTransactionBody**
 
-Call a function of the given smart contract instance, giving it functionParameters as its inputs. it can use the given amount of gas, and any unspent gas will be refunded to the paying account.
+Call a function of the given smart contract instance, giving it functionParameters as its inputs. The call can use at maximum the given amount of gas – the paying account will not be charged for any unspent gas.   
+  
+If this function results in data being stored, an amount of gas is calculated that reflects this storage burden.   
+  
+The amount of gas used, as well as other attributes of the transaction, e.g. size, number of signatures to be verified, determine the fee for the transaction – which is charged to the paying account.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
