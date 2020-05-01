@@ -6,8 +6,8 @@ Modify some of the metadata for a file. Any null field is ignored \(left unchang
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| fileID | [FileID](../basic-types/fileid.md) | The file ID of the file to update |
-| expirationTime | [Timestamp](../miscellaneous/timestamp.md#timestamp) | The new time at which it should expire \(ignored if not later than the current value\) |
-| keys | [KeyList](../basic-types/keylist.md) | The keys that can modify or delete the file |
-| contents |  | The new file contents. All the bytes in the old contents are discarded. |
+| fileID | [FileID](../basic-types/fileid.md) | The ID of the file to update |
+| expirationTime | [Timestamp](../miscellaneous/timestamp.md#timestamp) | The new expiry time \(ignored if not later than the current expiry\) |
+| keys | [KeyList](../basic-types/keylist.md) | The new list of keys that can modify or delete the file |
+| contents |  | The new contents that should overwrite the file's current contents |
 
