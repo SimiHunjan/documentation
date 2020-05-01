@@ -5,13 +5,13 @@ The functionality provided by hedera hashgraph
 | Enum Name | Description |
 | :--- | :--- |
 | `NONE` | UNSPECIFIED - Need to keep first value as unspecified because first element is ignored and not parsed \(0 is ignored by parser\) |
-| `CryptoTransfer` | Crypto transfer |
-| `CryptoUpdate` | Crypto update account |
-| `CryptoDelete` | Crypto delete account |
+| `CryptoTransfer` | crypto transfer |
+| `CryptoUpdate` | crypto update account |
+| `CryptoDelete` | crypto delete account |
 | `CryptoAddLiveHash` | Add a livehash to a crypto account \(0.5.0\) |
 | `CryptoDeleteLiveHash` | Delete a livehash from a crypto account \(0.5.0\) |
-| `CryptoAddClaim` | Crypto add claim to the account |
-| `CryptoDeleteClaim` | Crypto delete claim to the account |
+| `CryptoAddClaim` | crypto add claim to the account |
+| `CryptoDeleteClaim` | crypto delete claim to the account |
 | `ContractCall` | Smart Contract Call |
 | `ContractCreate` | Smart Contract Create Contract |
 | `ContractUpdate` | Smart Contract update contract |
