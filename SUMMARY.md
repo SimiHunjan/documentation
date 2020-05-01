@@ -4,7 +4,7 @@
 * [Mainnet](mainnet/README.md)
   * [Mainnet Access](mainnet/mainnet-access.md)
   * [Nodes](mainnet/nodes/README.md)
-    * [Consensus Nodes](mainnet/nodes/consensus-nodes/README.md)
+    * [Mainnet Nodes](mainnet/nodes/consensus-nodes/README.md)
       * [Node Requirements](mainnet/nodes/consensus-nodes/node-requirements/README.md)
         * [Reference Configuration](mainnet/nodes/consensus-nodes/node-requirements/reference-configuration.md)
         * [FAQ](mainnet/nodes/consensus-nodes/node-requirements/faq.md)
