@@ -17,7 +17,7 @@ Accounts are comprised of:
 
 ## Keys
 
-Each account has a public and private key pair used to sign transactions. Key pairs are used to identify the user and authorize transactions that are submitted to the network for consensus.
+Each account has a public and private key pair. The private key of the account is used authorize and sign transactions. The private key is not to be shared with other members on the network as they can authorize transactions from your account on your behalf. The public key is what is visable to others on the account. Key pairs are used to identify the user and authorize transactions that are submitted to the network for consensus.
 
 The public key can be shared and is visible to other users in the network. The private key should be kept secret to the owner. Private keys _cannot_ be recovered once they are lost.
 
