@@ -6,8 +6,6 @@ description: Hedera accounts
 
 ## Accounts
 
-Hedera account basics
-
 Accounts are the central starting point for Hedera. Accounts are stored on the public ledger and are required to pay transaction fees.
 
 Accounts are comprised of:
@@ -17,7 +15,7 @@ Accounts are comprised of:
 * Balance
 * Livehash\(es\)
 
-## Key Pair
+## Keys
 
 Each account has a public and private key pair used to sign transactions.Key pairs are used to identify the user and authorize transactions that are submitted to the network for consensus.
 
