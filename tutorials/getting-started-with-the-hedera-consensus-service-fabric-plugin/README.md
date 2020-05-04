@@ -122,7 +122,7 @@ Additionally, you may reference Hyperledger Fabric's documentation for the [prer
 
 You should be able to use the commands provided in this tutorial in terminal prompt or IDE of choice.
 
-## 1. Clone the pluggable-hcs Project 
+## 1. Clone the [pluggable-hcs](https://github.com/hyperledger-labs/pluggable-hcs) Project 
 
 * Open your terminal or favorite IDE
 * Enter the following commands to set-up your environment variables \(**required**\)
