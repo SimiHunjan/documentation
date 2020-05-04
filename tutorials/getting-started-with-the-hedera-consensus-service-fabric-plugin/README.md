@@ -140,7 +140,7 @@ $ mkdir -p $GOPATH/src/github.com/hyperledger && cd $GOPATH/src/github.com/hyper
 ```
 
 * Clone the **pluggable-hcs** repository and rename it to **fabric** 
-* You **must** rename the folder to fabric otherwise you will run into issues in the following steps
+* You **must** rename the folder to **fabric** otherwise you will run into issues in the following steps
 
 ```text
 $ git clone https://github.com/hyperledger-labs/pluggable-hcs fabric
