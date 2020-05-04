@@ -57,6 +57,10 @@ Mainnet mirror nodes will be upgraded from v0.8.1 to [v0.9.1](release-notes.md#m
 * Replace “claim” with “livehash” as appropriate
 * Standardize and clarify HAPI doc
 
+## [Mirror Node \(v0.10.1\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.10.1)
+
+Small bug fix release to address a REST API packaging issue.
+
 ## [Mirror Node \(v0.10.0\)](https://github.com/hashgraph/hedera-mirror-node/releases/tag/v0.10.0)
 
 In preparation for Hedera Node release 0.5.0, we're releasing v0.10.0 to support the latest version of [HAPI](https://docs.hedera.com/guides/docs/hedera-api). The changes include renaming Claims to LiveHash and new response codes. One important HAPI change is the addition of a `topicRunningHashVersion` to the transaction record. This change was necessary as the way the topic running hash is changing with the release of 0.5.0. As a result, the Hedera Mirror Node added this new field to its database and a migration is ran to populate it with either the new or old version depending upon the release date of 0.5.0.
