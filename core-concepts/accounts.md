@@ -49,7 +49,7 @@ The amount of HBAR \(ℏ\) held by the account.
 
 Accounts, like files and smart contracts, take up storage on the network. Accounts must have a sufficient amount of hbar to fund a renewal of its storage on the network. The amount for renewal will be charged every pre-determined number of seconds. This amount of time is known as the autoRenewPeriod.
 
-At Open Access, the maximum autoRenewPeriod for an account, file, or smart contract will be limited to 3 months \(7890000 seconds\).
+The maximum autoRenewPeriod for an account, file, or smart contract will be limited to 3 months \(7890000 seconds\).
 
 ## LiveHash
 
