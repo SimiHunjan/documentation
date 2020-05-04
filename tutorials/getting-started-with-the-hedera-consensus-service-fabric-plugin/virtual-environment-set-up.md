@@ -12,19 +12,19 @@ Enables developers to run the HCS Hyperledger Fabric sample network using a virt
 
 ## 1. Open your terminal/IDE and CD to where you would like to clone the fabric-hcs project
 
-* Clone the repository and rename the project folder to "fabric"
+* Clone the **pluggable-hcs** repository and rename the project folder to **fabric**
+* Navigate to the **fabric** folder
 
 ```text
-git clone https://github.com/hashgraph/fabric-hcs fabric
+https://github.com/hyperledger-labs/pluggable-hcs fabric
 cd fabric
 ```
 
-* You should now be in the fabric project folder
+* You should now be in the **fabric** project folder
 
-## 2. Switch to the hcs-dev branch
+## 2. Confirm you are on the master branch
 
 ```text
-git checkout hcs-dev
 git branch
 ```
 
@@ -36,9 +36,9 @@ vagrant up
 vagrant ssh
 ```
 
-* You should now be back in the fabric folder
+* You should now be back in the **fabric** folder
 
-Now you have your virtual envrionment ready to go. Please refer to step two [Build Fabric Binaries and Docker Images](./#2-build-fabric-binaries-and-docker-images) in the master tutorial to continue.
+Now you have your virtual envrionment ready to go. Please refer to **step two**: [Build Fabric Binaries and Docker Images](./#2-build-fabric-binaries-and-docker-images) in the master tutorial to continue.
 
 {% page-ref page="./" %}
 

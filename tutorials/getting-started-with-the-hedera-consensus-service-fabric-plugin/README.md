@@ -85,9 +85,9 @@ If you would like to run the sample using a virtual environment, please follow t
 * Testnet account ID and private key
   * Please follow the instructions [here](../../testnet/testnet-access.md)
 
-### fabric-hcs Repository
+### pluggable-hcs Repository
 
-* You will be directed to clone this repository in the outlined steps below
+* You will be directed to clone this [repository](https://github.com/hyperledger-labs/pluggable-hcs) in the outlined steps below
 
 ### Hyperledger Fabric Network
 
@@ -139,27 +139,21 @@ $ export PATH=$PATH:$GOPATH/bin
 $ mkdir -p $GOPATH/src/github.com/hyperledger && cd $GOPATH/src/github.com/hyperledger
 ```
 
-* Clone the **fabric-hcs** repository and rename to **fabric** into the **hyperledger** directory created in the previous step
-* Navigate to the **fabric** directory 
+* Clone the **pluggable-hcs** repository and rename it to **fabric** 
+* You **must** rename the folder to fabric otherwise you will run into issues in the following steps
 
 ```text
-$ git clone https://github.com/hashgraph/fabric-hcs fabric
+$ git clone https://github.com/hyperledger-labs/pluggable-hcs fabric
 $ cd fabric
 ```
 
-*  Checkout the **hcs-dev** branch of the fabric-hcs repository 
-
-```text
-$ git checkout hcs-dev
-```
-
-* Confirm you are using the **hcs-dev** branch
+* Confirm you are on the master branch
 
 ```text
 $ git branch
 ```
 
-⭐ You should now have the hcs-dev branch ready to go on your computer
+⭐ You have now successfully set your Go path variables and installed the pluggable-hcs/fabric repository. 
 
 ## 2. Build Fabric Binaries and Docker Images
 
@@ -170,7 +164,7 @@ $ cd fabric
 ```
 
 *  Follow the commands below to build the required fabric binaries and docker images
-  * Note this process may take a few minutes to complete
+  * Note: This process may take a few minutes to complete
 
 ```text
 $ make clean
@@ -202,8 +196,14 @@ $ nano hedera_env.json
 {
     "operatorId": "put your testnet account id here",
     "operatorKey": "put your account private key here",
-    "nodeId": "0.0.4",
-    "nodeAddress": "1.testnet.hedera.com:50211",
+    "nodeId": "",
+    "nodeAddress": "",
+    "network": {
+        "0.testnet.hedera.com:50211": "0.0.3",
+        "1.testnet.hedera.com:50211": "0.0.4",
+        "2.testnet.hedera.com:50211": "0.0.5",
+        "3.testnet.hedera.com:50211": "0.0.6"
+    },
     "mirrorNodeAddress": "hcs.testnet.mirrornode.hedera.com:5600"
 }
 ```
