@@ -5,7 +5,7 @@
 | **Mainnet** | Mirror Node v0.9.1 |
 | **Testnet** | Mirror Node v0.10.1 |
 
-## Upcoming Release [\[May 5, 2020\]](https://status.hedera.com/incidents/sckgl7377493)
+## Upcoming Release [\[May 5, 2020 - Completed\]](https://status.hedera.com/incidents/sckgl7377493)
 
 **Hedera Services Code \(v0.5.0\)**   
   
