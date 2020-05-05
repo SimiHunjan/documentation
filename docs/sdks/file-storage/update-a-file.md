@@ -21,6 +21,8 @@ new FileUpdateTransaction()
 
 ## Example
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // `Client.forMainnet()` is provided for connecting to Hedera mainnet
 Client client = Client.forTestnet();
@@ -63,4 +65,71 @@ byte[] updateContents = new FileContentsQuery()
     
 System.out.println("File content query results: " + new String(updateContents));
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+async function main() {
+
+    const operatorAccount = process.env.OPERATOR_ID;
+    const operatorPrivateKey = Ed25519PrivateKey.fromString(process.env.OPERATOR_KEY);
+    const operatorPublicKey = operatorPrivateKey.publicKey;
+
+    if (operatorPrivateKey == null || operatorAccount == null) {
+     throw new Error(
+          "environment variables OPERATOR_KEY and OPERATOR_ID must be present"
+     );
+    }
+    // `Client.forMainnet()` is provided for connecting to Hedera mainnet
+    const client = Client.forTestnet()
+
+    // Defaults the operator account ID and key such that all generated transactions will be paid for
+    // by this account and be signed by this key   
+    client.setOperator(operatorAccount, operatorPrivateKey);
+
+    // Create a file with contents
+    const transactionId = await new FileCreateTransaction()
+        .setContents("Hello, Hedera's file service!")
+        .addKey(operatorPublicKey) // Defines the "admin" of this file
+        .setMaxTransactionFee(new Hbar(15))
+        .execute(client);
+
+    // Grabt the file ID from the receipt 
+    const receipt = await transactionId.getReceipt(client); 
+    const fileId = receipt.getFileId(); 
+    console.log("new file id = ", fileId);
+
+    //Get file contents
+    const fileContents = await new FileContentsQuery()
+        .setFileId(fileId)
+        .execute(client);
+
+    // Print the contents to the console
+    console.log(`file contents: ${new TextDecoder().decode(fileContents)}`)
+
+    // Update the file with new contents
+    // Updating the file will replace the existing contents
+    const fileUpdateTransactionId = await new FileUpdateTransaction()
+        .setFileId(fileId)
+        .setContents("You updated the file!")
+        .execute(client);
+
+    // Make sure the file update with the new contents before retreiving the contents
+    const updateReceipt = await fileUpdateTransactionId.getReceipt(client);
+    console.log(`Status: ${updateReceipt.status}`)
+
+    // Get the new file contents
+    const fileContentsUpdate = await new FileContentsQuery()
+     .setFileId(fileId)
+     .execute(client);
+
+    // Print the updated file contents to the console
+    console.log(`new file contents: ${new TextDecoder().decode(fileContentsUpdate)}`)
+
+}
+
+main();
+```
+{% endtab %}
+{% endtabs %}
 
