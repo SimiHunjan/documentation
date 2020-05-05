@@ -4,10 +4,10 @@
 
 | Constructor | Description |
 | :--- | :--- |
-| `ContractRecordQuery()` | Initializes the ContractRecordQuery object |
+| `ContractRecordsQuery()` | Initializes the ContractRecordQuery object |
 
 ```java
-new ContractRecordQuery()
+new ContractRecordsQuery()
 ```
 
 ## Basic
@@ -18,9 +18,19 @@ new ContractRecordQuery()
 
 ## Example
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
-new ContractRecordQuery()
+new ContractRecordsQuery()
     .setContractId(newContractId)
     .execute(client);
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```
+
+```
+{% endtab %}
+{% endtabs %}
 
