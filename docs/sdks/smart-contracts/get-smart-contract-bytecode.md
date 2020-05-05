@@ -84,5 +84,13 @@ System.out.println("Length " + byteCodeQuery.length);
 
 ```
 {% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const byteCodeQuery = new ContractBytecodeQuery()
+    .setContractId(newContractId)
+    .execute(client);
+```
+{% endtab %}
 {% endtabs %}
 
