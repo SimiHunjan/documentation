@@ -1,6 +1,21 @@
 # Consensus Service
 
-The Consensus Service provides the ability for Hedera Hashgraph to provide aBFT consensus as to the order and validity of messages submitted to a topic, as well as a consensus timestamp for those messages. Automatic renewal can be configured via an autoRenewAccount. Any time an autoRenewAccount is added to a topic, that createTopic/updateTopic transaction must be signed by the autoRenewAccount. The autoRenewPeriod on an account must currently be set a value in createTopic between MIN\_AUTORENEW\_PERIOD \(6999999seconds\) and MAX\_AUTORENEW\_PERIOD \(8000001 seconds\). During creation this sets the initial expirationTime of the topic \(see more below\). If no adminKey is on a topic, there may not be an autoRenewAccount on the topic, deleteTopic is not allowed, and the only change allowed via an updateTopic is to extend the expirationTime. If an adminKey is on a topic, every updateTopic and deleteTopic transaction must be signed by the adminKey, except for updateTopics which only extend the topic's expirationTime \(no adminKey authorization required\). If an updateTopic modifies the adminKey of a topic, the transaction signatures on the updateTopic must fulfill both the pre-update and post-update adminKey signature requirements. Mirrornet ConsensusService may be used to subscribe to changes on the topic, including changes to the topic definition and the consensus ordering and timestamp of submitted messages. Until autoRenew functionality is supported by HAPI, the topic will not expire, the autoRenewAccount will not be charged, and the topic will not automatically be deleted.
+The Consensus Service provides the ability for Hedera Hashgraph to provide aBFT consensus as to the order and validity of messages submitted to a topic, as well as a consensus timestamp for those messages.   
+  
+Automatic renewal can be configured via an autoRenewAccount.   
+Any time an autoRenewAccount is added to a topic, that createTopic/updateTopic transaction must be signed by the autoRenewAccount.   
+  
+The autoRenewPeriod on an account must currently be set a value in createTopic between MIN\_AUTORENEW\_PERIOD \(6999999seconds\) and MAX\_AUTORENEW\_PERIOD \(8000001 seconds\). During creation this sets the initial expirationTime of the topic \(see more below\).   
+  
+If no adminKey is on a topic, there may not be an autoRenewAccount on the topic, deleteTopic is not allowed, and the only change allowed via an updateTopic is to extend the expirationTime.   
+  
+If an adminKey is on a topic, every updateTopic and deleteTopic transaction must be signed by the adminKey, except for updateTopics which only extend the topic's expirationTime \(no adminKey authorization required\).   
+  
+If an updateTopic modifies the adminKey of a topic, the transaction signatures on the updateTopic must fulfill both the pre-update and post-update adminKey signature requirements.   
+  
+Mirrornet ConsensusService may be used to subscribe to changes on the topic, including changes to the topic definition and the consensus ordering and timestamp of submitted messages.   
+  
+Until autoRenew functionality is supported by HAPI, the topic will not expire, the autoRenewAccount will not be charged, and the topic will not automatically be deleted.
 
   
 Once autoRenew functionality is supported by HAPI:
