@@ -2,11 +2,12 @@
 
 `ContractInfoQuery()` returns information about a smart contract instance.
 
-* Account ID
+* Account ID \(cryptocurrency account owned by the smart contract instance\)
 * Contract ID
-* Receipt
+* Admin key
 * Expiration time
 * Number of bytes of storage being used
+* Auto renew period
 * Memo
 
 | Constructor | Description |
