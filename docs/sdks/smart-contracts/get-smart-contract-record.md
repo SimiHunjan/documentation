@@ -28,8 +28,12 @@ new ContractRecordsQuery()
 {% endtab %}
 
 {% tab title="JavaScript" %}
-```
-
+```javascript
+const record = await new ContractRecordsQuery()
+    .setContractId(newContractId)
+    .execute(client);
+    
+console.log(record)
 ```
 {% endtab %}
 {% endtabs %}
