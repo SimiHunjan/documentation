@@ -18,6 +18,8 @@ new ContractByteCodeQuery()
 
 ## Example
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 ClassLoader cl = CreateStatefulContract.class.getClassLoader();
 
@@ -81,4 +83,6 @@ System.out.println("Length " + byteCodeQuery.length);
 
 
 ```
+{% endtab %}
+{% endtabs %}
 
