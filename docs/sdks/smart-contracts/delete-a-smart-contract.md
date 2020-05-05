@@ -18,6 +18,8 @@ new ContractDeleteTransaction()
 
 ## Example <a id="example"></a>
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 ClassLoader cl = CreateSimpleContract.class.getClassLoader();
 
@@ -100,4 +102,6 @@ if (contractDeleteResult.status != Status.Success) {
 }
 System.out.println("Contract successfully deleted");
 ```
+{% endtab %}
+{% endtabs %}
 
