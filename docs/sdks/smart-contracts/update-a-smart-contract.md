@@ -73,5 +73,14 @@ if (contractUpdateResult.status != Status.Success) {
 System.out.println("Contract successfully updated");
 ```
 {% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const updateContract = new ContractUpdateTransaction()
+     .setContractId(newContractId)
+     .setContractMemo("Update the memo of the smart contract")
+     .execute(client);
+```
+{% endtab %}
 {% endtabs %}
 
