@@ -70,7 +70,7 @@ System.out.println("File content query results: " + new String(appendContents));
 
 {% tab title="JavaScript" %}
 ```javascript
-async function main() {
+ async function main() {
   
   const operatorAccount = process.env.OPERATOR_ID;
   const operatorPrivateKey = Ed25519PrivateKey.fromString(process.env.OPERATOR_KEY);
