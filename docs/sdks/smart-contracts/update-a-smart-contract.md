@@ -23,6 +23,8 @@ new ContractUpdateTransaction()
 
 ## Example
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // `Client.forMainnet()` is provided for connecting to Hedera mainnet
 Client client = Client.forTestnet();
@@ -70,4 +72,6 @@ if (contractUpdateResult.status != Status.Success) {
    return;
 System.out.println("Contract successfully updated");
 ```
+{% endtab %}
+{% endtabs %}
 
