@@ -28,9 +28,21 @@ new AccountRecordsQuery()
 
 ## Example
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 CryptoGetAccountRecordsResponse accountRecord = new AccountRecordsQuery()
      .setAccountId(accountId)
      .execute(client);
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const accountRecord = await new AccountRecordsQuery()
+    .setAccountId(accountId)
+    .execute(client);
+```
+{% endtab %}
+{% endtabs %}
 
