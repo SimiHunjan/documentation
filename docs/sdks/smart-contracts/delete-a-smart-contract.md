@@ -103,5 +103,14 @@ if (contractDeleteResult.status != Status.Success) {
 System.out.println("Contract successfully deleted");
 ```
 {% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const deleteContractTxId = new ContractDeleteTransaction()
+    .setContractId(newContractId)
+    .execute(client);
+
+```
+{% endtab %}
 {% endtabs %}
 
