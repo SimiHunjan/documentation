@@ -19,6 +19,8 @@ new FileAppendTransaction()
 
 ## Example
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // `Client.forMainnet()` is provided for connecting to Hedera mainnet
 Client client = Client.forTestnet();
@@ -64,4 +66,58 @@ byte[] appendContents = new FileContentsQuery()
 // Prints query results to console
 System.out.println("File content query results: " + new String(appendContents));
 ```
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+async function main() {
+  
+  const operatorAccount = process.env.OPERATOR_ID;
+  const operatorPrivateKey = Ed25519PrivateKey.fromString(process.env.OPERATOR_KEY);
+  const operatorPublicKey = operatorPrivateKey.publicKey;
+
+  if (operatorPrivateKey == null || operatorAccount == null) {
+    throw new Error(
+      "environment variables OPERATOR_KEY and OPERATOR_ID must be present"
+    );
+  }
+
+  const client = Client.forTestnet()
+  client.setOperator(operatorAccount, operatorPrivateKey);
+
+  const transactionId = await new FileCreateTransaction()
+    .setContents("Hello, Hedera's file service!")
+    .addKey(operatorPublicKey) // Defines the "admin" of this file
+    .setMaxTransactionFee(new Hbar(15))
+    .execute(client);
+
+const receipt = await transactionId.getReceipt(client); 
+const fileId = receipt.getFileId(); 
+console.log("new file id = ", fileId);
+
+//Get file contents
+
+const fileContents = await new FileContentsQuery()
+    .setFileId(fileId)
+    .execute(client);
+
+
+console.log(`file contents: ${JSON.stringify(fileContents)}`)
+
+
+const fileAppendTransactionId = await new FileAppendTransaction()
+    .setFileId(receipt.getFileId())
+    .setContents("The appended contents")
+    .execute(client);
+
+const appendReceipt = await fileAppendTransactionId.getReceipt(client);
+
+console.log(appendReceipt)
+
+}
+
+main();
+```
+{% endtab %}
+{% endtabs %}
 
