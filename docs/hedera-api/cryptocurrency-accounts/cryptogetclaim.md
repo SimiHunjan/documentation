@@ -1,5 +1,9 @@
 # CryptoGetLiveHash
 
+{% hint style="info" %}
+Renamed from CryptoDeleteClaim to CryptoDeleteLiveHash \(Hedera Services v0.5.0\).
+{% endhint %}
+
 ## CryptoGetLiveHashQuery
 
 Get a single livehash attached to an account, or return null if it does not exist.
