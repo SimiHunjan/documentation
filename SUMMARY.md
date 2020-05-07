@@ -114,7 +114,7 @@
     * [CryptoDelete](docs/hedera-api/cryptocurrency-accounts/cryptodelete.md)
     * [CryptoAddLiveHash](docs/hedera-api/cryptocurrency-accounts/cryptoaddclaim.md)
     * [CryptoDeleteLiveHash](docs/hedera-api/cryptocurrency-accounts/cryptodeletelivehash.md)
-    * [CryptoGetClaim](docs/hedera-api/cryptocurrency-accounts/cryptogetclaim.md)
+    * [CryptoGetLiveHash](docs/hedera-api/cryptocurrency-accounts/cryptogetclaim.md)
     * [CryptoGetAccountBalance](docs/hedera-api/cryptocurrency-accounts/cryptogetaccountbalance.md)
     * [CryptoGetAccountRecords](docs/hedera-api/cryptocurrency-accounts/cryptogetaccountrecords.md)
     * [CryptoGetInfo](docs/hedera-api/cryptocurrency-accounts/cryptogetinfo.md)
