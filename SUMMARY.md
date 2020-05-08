@@ -36,7 +36,10 @@
 
 ## Documentation <a id="docs"></a>
 
-* [Release Notes](docs/release-notes.md)
+* [Release Notes](docs/release-notes/README.md)
+  * [Hedera Services](docs/release-notes/services.md)
+  * [Hedera Platform](docs/release-notes/hedera-platform.md)
+  * [Mirror Node](docs/release-notes/mirror-node.md)
 * [SDKs](docs/sdks/README.md)
   * [Specialized Types](docs/sdks/specialized-types.md)
   * [Keys](docs/sdks/keys.md)
