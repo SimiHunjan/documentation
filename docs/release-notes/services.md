@@ -8,7 +8,61 @@
 
 ## Upcoming Releases
 
-## \*\*\*\*
+## **v0.5.8**
+
+{% hint style="info" %}
+**MAINNET SCHEDULED: MAY 21, 2020**
+{% endhint %}
+
+{% hint style="info" %}
+**TESTNET SCHEDULED: MAY 19, 2020**
+{% endhint %}
+
+In Hedera Services v0.5.0, we've [added TLS](https://github.com/hashgraph/hedera-services/issues/29) for trusted communication with nodes on the Hedera network. For better security, only TLS v1.2 and v1.3 with TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384 and TLS\_RSA\_WITH\_AES\_256\_GCM\_SHA384 cipher suites are allowed. We've added [new metadata](https://github.com/hashgraph/hedera-services/issues/30) in the Hedera `NodeAddressBook`, accessible in system file `0.0.101`. The versions of the node software and gRPC Hedera API \(HAPI\) are now queryable via [`GetVersionInfo`](https://github.com/hashgraph/hedera-services/issues/32) under the new `NetworkService` for node- and network-scoped operations.
+
+For Hedera Consensus Service, we've updated the topic running hash calculation to use the [SHA-384 hash](https://github.com/hashgraph/hedera-services/issues/36)of the submitted message, rather than the message itself. This reduces the storage requirements needed to validate the hash of a topic. The record of a `ConsensusSubmitMessage` transaction that uses the new hashing scheme will have a new `topicRunningHashVersion` field in its receipt. The value of the field will be `2`.
+
+Hedera File Service also has several fixes of note. First, we enabled [immutable files](https://github.com/hashgraph/hedera-services/issues/37). Second, we relaxed the [signing requirements](https://github.com/hashgraph/hedera-services/issues/38) for a `FileDelete` transaction to match the semantics of a revocation service. Third, we fixed a [fee calculation](https://github.com/hashgraph/hedera-services/issues/39) bug that overcharged certain `FileUpdate` transactions.
+
+For Hedera Smart Contract Service, we've improved visibility into transactions that create child contracts using the new keyword by putting created ids in the record of the transaction; and we now [propagate parent contract metadata](https://github.com/hashgraph/hedera-services/issues/31) to created children.
+
+Finally, if you use the throttle properties in system file `0.0.121` to estimate network performance limits, you will also be interested in a new [standardized format](https://github.com/hashgraph/hedera-services/issues/33) of those properties. The lists below contain these and other minor updates, bug fixes, and documentation changes.
+
+{% hint style="warning" %}
+Version 0.5.8 includes a patch which addresses the resilience of peer-to-peer networking in the hashgraph consensus platform.
+{% endhint %}
+
+## Enhancements
+
+* Add support for TLS 
+* Expand address book metadata
+* Return all created contract ids
+* Propagate creator contract metadata
+* Introduce GetVersionInfo query
+* Standardize throttle configuration
+* Enforce file.encoding=utf-8 on startup
+* Make duration properties inclusive for readability
+
+## Bug fixes
+
+* Use message SHA-384 hash in running hash
+* Enable immutable files
+* Relax FileDelete signing requirements
+* Fix sbh calculation in FileUpdate
+* Return metadata for deleted files
+* Enforce receiver signing requirements during contract execution
+* Reject invalid CryptoGetInfo
+* Reject CryptoCreate with empty key
+* Return NOT\_SUPPORTED for state proof queries
+* Waive fees for 0.0.57 updating 0.0.111 
+* Waive signing requirements for 0.0.55 updating 0.0.121/0.0.122
+* Waive all fees for 0.0.2 
+* Do not throttle system accounts
+
+## Documentation changes
+
+* Replace "claim" with "livehash" as appropriate
+* Standardize and clarify HAPI doc
 
 ## Latest Releases
 
