@@ -8,11 +8,11 @@
 
 ## Upcoming Releases
 
-## **v0.5.0**
+## \*\*\*\*
 
-{% hint style="info" %}
-**MAINNET UPGRADE SCHEDULED: MAY 21, 2020**
-{% endhint %}
+## Latest Releases
+
+## **v0.5.0**
 
 {% hint style="success" %}
 **TESTNET UPGRADE COMPLETED: MAY 5, 2020**
@@ -61,8 +61,6 @@ Finally, if you use the throttle properties in system file 0.0.121 to estimate n
 
 * Replace “claim” with “livehash” as appropriate
 * Standardize and clarify HAPI doc
-
-## Latest Releases
 
 ## v0.4.1
 
