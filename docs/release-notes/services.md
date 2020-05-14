@@ -1,21 +1,21 @@
 # Hedera Services
 
-| Network | Version |
-| :--- | :--- |
-| **Mainnet** | 0.4.1  |
-| **Testnet** | 0.5.0 |
-| **Previewnet** | Coming soon... |
+| Network | Version | Upcoming Release |
+| :--- | :--- | :--- |
+| **Mainnet** | 0.4.1  | 0.5.8 |
+| **Testnet** | 0.5.0 | 0.5.8 |
+| **Previewnet** | Coming soon... |  |
 
 ## Upcoming Releases
 
 ## **v0.5.8**
 
 {% hint style="info" %}
-**MAINNET SCHEDULED: MAY 21, 2020**
+**TESTNET SCHEDULED: MAY 19, 2020**
 {% endhint %}
 
 {% hint style="info" %}
-**TESTNET SCHEDULED: MAY 19, 2020**
+**MAINNET SCHEDULED: MAY 21, 2020**
 {% endhint %}
 
 In Hedera Services v0.5.0, we've [added TLS](https://github.com/hashgraph/hedera-services/issues/29) for trusted communication with nodes on the Hedera network. For better security, only TLS v1.2 and v1.3 with TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384 and TLS\_RSA\_WITH\_AES\_256\_GCM\_SHA384 cipher suites are allowed. We've added [new metadata](https://github.com/hashgraph/hedera-services/issues/30) in the Hedera `NodeAddressBook`, accessible in system file `0.0.101`. The versions of the node software and gRPC Hedera API \(HAPI\) are now queryable via [`GetVersionInfo`](https://github.com/hashgraph/hedera-services/issues/32) under the new `NetworkService` for node- and network-scoped operations.
