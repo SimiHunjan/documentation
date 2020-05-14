@@ -32,7 +32,7 @@ Finally, if you use the throttle properties in system file `0.0.121` to estimate
 Version 0.5.8 includes a patch which addresses the resilience of peer-to-peer networking in the hashgraph consensus platform.
 {% endhint %}
 
-## Enhancements
+**Enhancements**
 
 * Add support for TLS 
 * Expand address book metadata
@@ -43,7 +43,7 @@ Version 0.5.8 includes a patch which addresses the resilience of peer-to-peer ne
 * Enforce file.encoding=utf-8 on startup
 * Make duration properties inclusive for readability
 
-## Bug fixes
+**Bug fixes**
 
 * Use message SHA-384 hash in running hash
 * Enable immutable files
@@ -59,7 +59,7 @@ Version 0.5.8 includes a patch which addresses the resilience of peer-to-peer ne
 * Waive all fees for 0.0.2 
 * Do not throttle system accounts
 
-## Documentation changes
+**Documentation changes**
 
 * Replace "claim" with "livehash" as appropriate
 * Standardize and clarify HAPI doc
