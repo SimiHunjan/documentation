@@ -2,7 +2,7 @@
 
 | Network | Version |
 | :--- | :--- |
-| **Mainnet** | 0.4.1 \[Upcoming release 0.5.0\] |
+| **Mainnet** | 0.4.1  |
 | **Testnet** | 0.5.0 |
 | **Previewnet** | Coming soon... |
 
