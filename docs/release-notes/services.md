@@ -17,7 +17,7 @@
 {% hint style="info" %}
 **MAINNET SCHEDULED: MAY 21, 2020**  
   
-Includes all updates from [v0.5.0](services.md#v-0-5-0)
+v0.5.8 includes all of the updates found in [v0.5.0](services.md#v-0-5-0)
 {% endhint %}
 
 Version 0.5.8 includes a patch which addresses the resilience of peer-to-peer networking in the hashgraph consensus platform.
