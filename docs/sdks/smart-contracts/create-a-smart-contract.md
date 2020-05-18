@@ -4,11 +4,15 @@
 Before you get started with smart contracts consider if the Hedera Consensus Service is better for your use case. For most, it provides greater performance and lower costs. Learn more in the blog series, [Exploring Tokenized Assets on HCS](https://www.hedera.com/blog/exploring-tokenized-assets-on-hedera-consensus-part-1).
 {% endhint %}
 
-`ContractCreateTransaction()` creates a new smart contract instance. The ID of the smart contract can be obtained from the record or receipt. The instance will run the bytecode stored in the given file, referenced either by FileID or by the transaction ID of the transaction that created the file. The constructor will be executed using the given amount of gas. Similar to accounts, the instance will exist for autoRenewSeconds and when it is reached the instance will renew itself for another autoRenewSeconds seconds. The associated cryptocurrency account will be charged for each auto-renew period.
+`ContractCreateTransaction()` creates a new smart contract instance. The ID of the smart contract can be obtained from the record or receipt. The instance will run the bytecode stored in the given file, referenced either by FileID or by the transaction ID of the transaction that created the file. The constructor will be executed using the given amount of gas. Similar to accounts, the instance will exist for autoRenewSeconds and when it is reached the instance will renew itself for another autoRenewSeconds seconds. The associated cryptocurrency account will be charged for each auto-renew period. 
 
 {% hint style="warning" %}
-**Smart Contract State Size**
+**Solidity Support**  
+Hedera smart contracts support Solidity versions up to **v0.5.9**.
+{% endhint %}
 
+{% hint style="warning" %}
+**Smart Contract State Size**  
 Each smart contract has a maximum state size of 1MB which can store up to approximately 16,000 key-value pairs.
 {% endhint %}
 
