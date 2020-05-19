@@ -11,7 +11,7 @@
 ## **v0.5.8**
 
 {% hint style="info" %}
-**TESTNET SCHEDULED: MAY 19, 2020**
+**TESTNET SCHEDULED: TBD**
 {% endhint %}
 
 {% hint style="info" %}
