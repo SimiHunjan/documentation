@@ -15,7 +15,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-**MAINNET SCHEDULED: MAY 21, 2020**  
+**MAINNET SCHEDULED: TBD**  
   
 v0.5.8 includes all of the updates found in [v0.5.0](services.md#v-0-5-0)
 {% endhint %}
