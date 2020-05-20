@@ -33,7 +33,7 @@ Here’s mine for reference.
 ```javascript
 {
   "name": "hello-hedera-js-sdk",
-  "version": "1.0.0",
+  "version": "1.1.12",
   "description": "A hello world project for the Hedera Hashgraph JavaScript SDK",
   "main": "index.js",
   "scripts": {
@@ -52,7 +52,8 @@ I personally really like VS Code if you haven’t checked it out recently!
 
 Now you can add the following information, provided from your [Hedera Portal](https://portal.hedera.com/) Account.
 
-```text
+```yaml
+# Operator ID and Key
 OPERATOR_ID=YOUR-TESTNET-ACCOUNT-ID
 OPERATOR_KEY=YOUR-TESTNET-PRIVATE-KEY
 ```
@@ -85,7 +86,7 @@ Install it with your favorite package manager.
 
 ```text
 // install Hedera's JS SDK with NPM
-// This example uses Hedera Java SDK v1.1.8
+// This example uses Hedera Java SDK v1.1.12
 npm install --save @hashgraph/sdk
 
 // Install with Yarn
@@ -116,8 +117,8 @@ Note: there are inline comments to help you understand what’s going on!
 
 ```javascript
 // Import the Hedera Hashgraph JS SDK
-// Example uses Hedera JavaScript SDK v1.1.8
-const { Client } = require("@hashgraph/sdk");
+// Example uses Hedera JavaScript SDK v1.1.12
+const { Client, CryptoTransferTransaction, AccountBalanceQuery } = require("@hashgraph/sdk");
 // Allow access to our .env file variables
 require("dotenv").config();
 
@@ -136,16 +137,24 @@ if (operatorPrivateKey == null ||
 // The Hedera JS SDK makes this reallyyy easy!
 const client = Client.forTestnet();
 
-// Set your client account ID and private key used to pay for transaction fees and sign transactions
+// Set your client default account ID and private key used to pay for transaction fees and sign transactions
 client.setOperator(operatorAccountId, operatorPrivateKey);
 
 // Hedera is an asynchronous environment :)
 (async function() {
+    console.log("balance before transfer:", (await new AccountBalanceQuery().setAccountId(operatorAccountId).execute(client)));
 
-  // Attempt to get and display the balance of our account
-  var currentBalance = (await client.getAccountBalance(operatorAccountId)).toString();
-  console.log("account balance:", currentBalance);
-})();
+    const receipt = await (await new CryptoTransferTransaction()
+        .addSender(operatorAccountId, 1)
+        .addRecipient("0.0.3", 1)
+        .setTransactionMemo("sdk example")
+        .execute(client))
+        .getReceipt(client);
+
+    console.log(receipt);
+    console.log("balance after transfer:", (await new AccountBalanceQuery().setAccountId(operatorAccountId).execute(client)));
+
+}());
 ```
 
 Copy and paste this into your **index.js**, and if everything is setup successfully, we can now run it! 
@@ -160,7 +169,7 @@ If successful, within a few seconds we should see something like `account balanc
 
 ```javascript
 // Import the Hedera Hashgraph JS SDK
-// Example uses Hedera JavaScript SDK v1.1.8
+// Example uses Hedera JavaScript SDK v1.1.12
 const { Client, CryptoTransferTransaction, AccountId } = require("@hashgraph/sdk");
 // Allow access to our .env file variables
 require("dotenv").config();
