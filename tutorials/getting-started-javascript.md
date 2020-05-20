@@ -39,7 +39,7 @@ Here’s mine for reference.
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Cooper Kunz",
+  "author": "Your Name",
   "license": "Apache-2.0"
 }
 ```
