@@ -86,7 +86,7 @@ Install it with your favorite package manager.
 
 ```text
 // install Hedera's JS SDK with NPM
-// This example uses Hedera Java SDK v1.1.12
+// This example uses Hedera JavaScript SDK v1.1.12
 npm install --save @hashgraph/sdk
 
 // Install with Yarn
