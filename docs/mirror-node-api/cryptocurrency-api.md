@@ -517,4 +517,61 @@ A single transaction can also be returned by specifying the transaction ID in th
       </td>
     </tr>
   </tbody>
-</table>
+</table>{% api-method method="get" host="" path="/api/v1/topics/:topicId/messages/" %}
+{% api-method-summary %}
+topic messages
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns topic messages for a given consensus timestamp
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="sequenceNumber" type="number" required=false %}
+The sequence number of the message relative to other messages submitted to the same topic
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="topicID" type="string" required=true %}
+The ID of the topic in x.y.z or z format
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="consensusTimestamp" type="string" required=false %}
+The consensus timestamp of a message in seconds.nanoseconds
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+  "responseJson": {
+    "consensus_timestamp": "1234567890.000000002",
+    "topic_id": "0.0.7",
+    "message": "bWVzc2FnZQ==",
+    "running_hash": "cnVubmluZ19oYXNo",
+    "sequence_number": 2
+  }
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Response Details
+
+| Response Item | Description |
+| :--- | :--- |
+| **consensus\_timestamp** | The consensus timestamp of the message in seconds.nanoseconds |
+| **topic\_id** | The ID of the topic the message was submitted to |
+| **message** | The content of the message |
+| **running\_hash** | The new running hash of the topic that received the message |
+| **sequence\_number** | The sequence number of the message relative to all other messages for the same topic |
+
