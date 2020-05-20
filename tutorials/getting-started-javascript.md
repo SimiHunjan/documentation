@@ -144,7 +144,7 @@ client.setOperator(operatorAccountId, operatorPrivateKey);
 (async function() {
 
   // Attempt to get and display the balance of our account
-  var currentBalance = (await new AccountBalanceQuery().setAccountId(operatorAccountId).execute(client));
+  var currentBalance = await new AccountBalanceQuery().setAccountId(operatorAccountId).execute(client);
   console.log("account balance:", currentBalance);
 })();
 ```
